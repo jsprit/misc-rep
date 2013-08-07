@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<carriers>
+		<carrier id="gridCarrier">
+			<capabilities fleetSize="INFINITE">
+				<vehicles>
+					<vehicle id="gridVehicle" depotLinkId="i(6,0)" typeId="gridType" earliestStart="00:00:00" latestEnd="02:00:00"/>
+				</vehicles>
+
+			</capabilities>
+
+			<services>
+				<service id="6" to="i(6,6)R" capacityDemand="1" earliestStart="00:00:00" latestEnd="02:00:00" serviceDuration="00:00:00"/>
+				<service id="10" to="j(9,4)" capacityDemand="1" earliestStart="00:00:00" latestEnd="02:00:00" serviceDuration="00:00:00"/>
+				<service id="7" to="i(7,7)" capacityDemand="1" earliestStart="00:00:00" latestEnd="02:00:00" serviceDuration="00:00:00"/>
+				<service id="2" to="i(3,9)" capacityDemand="1" earliestStart="00:00:00" latestEnd="02:00:00" serviceDuration="00:00:00"/>
+				<service id="1" to="j(1,5)" capacityDemand="1" earliestStart="00:00:00" latestEnd="02:00:00" serviceDuration="00:00:00"/>
+				<service id="8" to="j(6,3)R" capacityDemand="1" earliestStart="00:00:00" latestEnd="02:00:00" serviceDuration="00:00:00"/>
+				<service id="9" to="i(7,4)R" capacityDemand="1" earliestStart="00:00:00" latestEnd="02:00:00" serviceDuration="00:00:00"/>
+				<service id="5" to="i(5,5)" capacityDemand="1" earliestStart="00:00:00" latestEnd="02:00:00" serviceDuration="00:00:00"/>
+				<service id="4" to="i(4,4)R" capacityDemand="1" earliestStart="00:00:00" latestEnd="02:00:00" serviceDuration="00:00:00"/>
+				<service id="3" to="i(4,7)" capacityDemand="1" earliestStart="00:00:00" latestEnd="02:00:00" serviceDuration="00:00:00"/>
+			</services>
+
+		</carrier>
+		
+		
+	</carriers>
