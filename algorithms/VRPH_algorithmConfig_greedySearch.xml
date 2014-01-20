@@ -29,9 +29,7 @@
 	</prematureBreak>
 
 	<construction>
-		<insertion name="bestInsertion">
-			<considerFixedCosts weight="0.5">true</considerFixedCosts>
-		</insertion>	
+		<insertion name="bestInsertion"/>
 	</construction>
 	
 	<strategy>
