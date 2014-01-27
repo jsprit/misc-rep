@@ -1,0 +1,61 @@
+INFO: 7011: jsprit.core.algorithm.acceptor.SchrimpfAcceptance: Method 'public void setInitialThreshold(double)' has been added
+INFO: 7011: jsprit.core.algorithm.io.VehicleRoutingAlgorithms: Method 'public jsprit.core.algorithm.VehicleRoutingAlgorithm readAndCreateAlgorithm(jsprit.core.problem.VehicleRoutingProblem, java.lang.String, jsprit.core.algorithm.state.StateManager)' has been added
+INFO: 7011: jsprit.core.algorithm.io.VehicleRoutingAlgorithms: Method 'public jsprit.core.algorithm.VehicleRoutingAlgorithm readAndCreateAlgorithm(jsprit.core.problem.VehicleRoutingProblem, int, java.lang.String, jsprit.core.algorithm.state.StateManager)' has been added
+INFO: 7011: jsprit.core.algorithm.recreate.BestInsertionBuilder: Method 'public void setAllowVehicleSwitch(boolean)' has been added
+INFO: 7011: jsprit.core.algorithm.state.StateManager: Method 'public StateManager(jsprit.core.problem.cost.VehicleRoutingTransportCosts)' has been added
+INFO: 8000: jsprit.core.algorithm.state.UpdateEndLocationIfRouteIsOpen: Class jsprit.core.algorithm.state.UpdateEndLocationIfRouteIsOpen added
+INFO: 7011: jsprit.core.problem.VehicleRoutingProblem: Method 'public java.util.Collection getConstraints()' has been added
+INFO: 7007: jsprit.core.problem.VehicleRoutingProblem: Method 'public jsprit.core.problem.VehicleRoutingProblem$FleetComposition getFleetComposition()' has been deprecated
+INFO: 7007: jsprit.core.problem.VehicleRoutingProblem: Method 'public jsprit.core.util.Neighborhood getNeighborhood()' has been deprecated
+INFO: 7007: jsprit.core.problem.VehicleRoutingProblem: Method 'public java.util.Collection getProblemConstraints()' has been deprecated
+INFO: 7007: jsprit.core.problem.VehicleRoutingProblem$Builder: Method 'public VehicleRoutingProblem$Builder()' has been deprecated
+INFO: 7011: jsprit.core.problem.VehicleRoutingProblem$Builder: Method 'public jsprit.core.problem.VehicleRoutingProblem$Builder addConstraint(jsprit.core.problem.constraint.Constraint)' has been added
+INFO: 7011: jsprit.core.problem.VehicleRoutingProblem$Builder: Method 'public jsprit.core.problem.VehicleRoutingProblem$Builder addPenaltyVehicles(double)' has been added
+INFO: 7011: jsprit.core.problem.VehicleRoutingProblem$Builder: Method 'public jsprit.core.problem.VehicleRoutingProblem$Builder addPenaltyVehicles(double, double)' has been added
+INFO: 7007: jsprit.core.problem.VehicleRoutingProblem$Builder: Method 'public void addProblemConstraint(jsprit.core.problem.VehicleRoutingProblem$Constraint)' has been deprecated
+INFO: 7007: jsprit.core.problem.VehicleRoutingProblem$Builder: Method 'public java.util.Collection getAddedServices()' has been deprecated
+INFO: 7011: jsprit.core.problem.VehicleRoutingProblem$Builder: Method 'public java.util.Collection getAddedVehicleTypes()' has been added
+INFO: 7007: jsprit.core.problem.VehicleRoutingProblem$Builder: Method 'public jsprit.core.problem.VehicleRoutingProblem$Builder setNeighborhood(jsprit.core.util.Neighborhood)' has been deprecated
+INFO: 8000: jsprit.core.problem.constraint.Constraint: Class jsprit.core.problem.constraint.Constraint added
+INFO: 4000: jsprit.core.problem.constraint.ConstraintManager: Added jsprit.core.problem.constraint.Constraint to the set of implemented interfaces
+INFO: 4000: jsprit.core.problem.constraint.ConstraintManager: Added jsprit.core.problem.constraint.HardConstraint to the set of implemented interfaces
+INFO: 7011: jsprit.core.problem.constraint.ConstraintManager: Method 'public ConstraintManager(jsprit.core.problem.VehicleRoutingProblem, jsprit.core.problem.solution.route.state.RouteAndActivityStateGetter, java.util.Collection)' has been added
+INFO: 7011: jsprit.core.problem.constraint.ConstraintManager: Method 'public java.util.Collection getConstraints()' has been added
+INFO: 4000: jsprit.core.problem.constraint.HardActivityStateLevelConstraint: Added jsprit.core.problem.constraint.Constraint to the set of implemented interfaces
+INFO: 4000: jsprit.core.problem.constraint.HardActivityStateLevelConstraint: Added jsprit.core.problem.constraint.HardConstraint to the set of implemented interfaces
+INFO: 8000: jsprit.core.problem.constraint.HardConstraint: Class jsprit.core.problem.constraint.HardConstraint added
+INFO: 4000: jsprit.core.problem.constraint.HardRouteStateLevelConstraint: Added jsprit.core.problem.constraint.Constraint to the set of implemented interfaces
+INFO: 4000: jsprit.core.problem.constraint.HardRouteStateLevelConstraint: Added jsprit.core.problem.constraint.HardConstraint to the set of implemented interfaces
+INFO: 4000: jsprit.core.problem.constraint.PickupAndDeliverShipmentLoadActivityLevelConstraint: Added jsprit.core.problem.constraint.Constraint to the set of implemented interfaces
+INFO: 4000: jsprit.core.problem.constraint.PickupAndDeliverShipmentLoadActivityLevelConstraint: Added jsprit.core.problem.constraint.HardConstraint to the set of implemented interfaces
+INFO: 4000: jsprit.core.problem.constraint.ServiceDeliveriesFirstConstraint: Added jsprit.core.problem.constraint.Constraint to the set of implemented interfaces
+INFO: 4000: jsprit.core.problem.constraint.ServiceDeliveriesFirstConstraint: Added jsprit.core.problem.constraint.HardConstraint to the set of implemented interfaces
+INFO: 4000: jsprit.core.problem.constraint.ShipmentPickupsFirstConstraint: Added jsprit.core.problem.constraint.Constraint to the set of implemented interfaces
+INFO: 4000: jsprit.core.problem.constraint.ShipmentPickupsFirstConstraint: Added jsprit.core.problem.constraint.HardConstraint to the set of implemented interfaces
+INFO: 8000: jsprit.core.problem.constraint.SoftConstraint: Class jsprit.core.problem.constraint.SoftConstraint added
+INFO: 8000: jsprit.core.problem.cost.AbstractForwardVehicleRoutingTransportCosts: Class jsprit.core.problem.cost.AbstractForwardVehicleRoutingTransportCosts added
+INFO: 3001: jsprit.core.problem.job.Delivery: Removed final modifier from class
+INFO: 3001: jsprit.core.problem.job.Pickup: Removed final modifier from class
+INFO: 7011: jsprit.core.problem.solution.route.VehicleRoute: Method 'public java.util.List getActivities()' has been added
+INFO: 7011: jsprit.core.problem.solution.route.VehicleRoute$Builder: Method 'public jsprit.core.problem.solution.route.VehicleRoute$Builder setRouteEndArrivalTime(double)' has been added
+ERROR: 7009: jsprit.core.problem.solution.route.activity.End: Accessibility of method 'public jsprit.core.util.Coordinate getCoordinate()' has been decreased from public to package
+ERROR: 7009: jsprit.core.problem.solution.route.activity.End: Accessibility of method 'public void setCoordinate(jsprit.core.util.Coordinate)' has been decreased from public to package
+ERROR: 7009: jsprit.core.problem.solution.route.activity.Start: Accessibility of method 'public jsprit.core.util.Coordinate getCoordinate()' has been decreased from public to package
+ERROR: 7009: jsprit.core.problem.solution.route.activity.Start: Accessibility of method 'public void setCoordinate(jsprit.core.util.Coordinate)' has been decreased from public to package
+INFO: 7011: jsprit.core.problem.vehicle.PenaltyVehicleType: Method 'public PenaltyVehicleType(jsprit.core.problem.vehicle.VehicleType, double)' has been added
+INFO: 7011: jsprit.core.problem.vehicle.PenaltyVehicleType: Method 'public double getPenaltyFactor()' has been added
+ERROR: 7012: jsprit.core.problem.vehicle.Vehicle: Method 'public boolean isReturnToDepot()' has been added to an interface
+INFO: 7011: jsprit.core.problem.vehicle.VehicleImpl: Method 'public boolean isReturnToDepot()' has been added
+INFO: 7007: jsprit.core.problem.vehicle.VehicleImpl: Method 'public jsprit.core.problem.vehicle.VehicleImpl$NoVehicle noVehicle()' has been deprecated
+INFO: 7011: jsprit.core.problem.vehicle.VehicleImpl$Builder: Method 'public jsprit.core.problem.vehicle.VehicleImpl$Builder setReturnToDepot(boolean)' has been added
+INFO: 7007: jsprit.core.problem.vehicle.VehicleTypeImpl: Method 'public VehicleTypeImpl(java.lang.String, int, jsprit.core.problem.vehicle.VehicleTypeImpl$VehicleCostParams)' has been deprecated
+ERROR: 7009: jsprit.core.problem.vehicle.VehicleTypeImpl$Builder: Accessibility of method 'public VehicleTypeImpl$Builder(java.lang.String, int)' has been decreased from public to private
+INFO: 5000: jsprit.core.util.CrowFlyCosts: Added jsprit.core.problem.cost.AbstractForwardVehicleRoutingTransportCosts to the list of superclasses
+INFO: 7003: jsprit.core.util.CrowFlyCosts: Method 'public double getBackwardTransportCost(java.lang.String, java.lang.String, double, jsprit.core.problem.driver.Driver, jsprit.core.problem.vehicle.Vehicle)' has been removed, but an inherited definition exists.
+INFO: 7003: jsprit.core.util.CrowFlyCosts: Method 'public double getBackwardTransportTime(java.lang.String, java.lang.String, double, jsprit.core.problem.driver.Driver, jsprit.core.problem.vehicle.Vehicle)' has been removed, but an inherited definition exists.
+INFO: 5000: jsprit.core.util.ManhattanCosts: Added jsprit.core.problem.cost.AbstractForwardVehicleRoutingTransportCosts to the list of superclasses
+INFO: 7003: jsprit.core.util.ManhattanCosts: Method 'public double getBackwardTransportCost(java.lang.String, java.lang.String, double, jsprit.core.problem.driver.Driver, jsprit.core.problem.vehicle.Vehicle)' has been removed, but an inherited definition exists.
+INFO: 7003: jsprit.core.util.ManhattanCosts: Method 'public double getBackwardTransportTime(java.lang.String, java.lang.String, double, jsprit.core.problem.driver.Driver, jsprit.core.problem.vehicle.Vehicle)' has been removed, but an inherited definition exists.
+INFO: 5000: jsprit.core.util.VehicleRoutingTransportCostsMatrix: Added jsprit.core.problem.cost.AbstractForwardVehicleRoutingTransportCosts to the list of superclasses
+INFO: 7003: jsprit.core.util.VehicleRoutingTransportCostsMatrix: Method 'public double getBackwardTransportCost(java.lang.String, java.lang.String, double, jsprit.core.problem.driver.Driver, jsprit.core.problem.vehicle.Vehicle)' has been removed, but an inherited definition exists.
+INFO: 7003: jsprit.core.util.VehicleRoutingTransportCostsMatrix: Method 'public double getBackwardTransportTime(java.lang.String, java.lang.String, double, jsprit.core.problem.driver.Driver, jsprit.core.problem.vehicle.Vehicle)' has been removed, but an inherited definition exists.
