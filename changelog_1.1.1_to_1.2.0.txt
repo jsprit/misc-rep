@@ -1,0 +1,102 @@
+INFO: 7007: jsprit.core.algorithm.state.StateManager: Method 'public StateManager(jsprit.core.problem.VehicleRoutingProblem)' has been deprecated
+INFO: 7007: jsprit.core.algorithm.state.StateManager: Method 'public void addDefaultActivityState(jsprit.core.problem.solution.route.state.StateFactory$StateId, jsprit.core.problem.solution.route.state.StateFactory$State)' has been deprecated
+INFO: 7011: jsprit.core.algorithm.state.StateManager: Method 'public void addDefaultActivityState(jsprit.core.problem.solution.route.state.StateFactory$StateId, java.lang.Class, java.lang.Object)' has been added
+INFO: 7007: jsprit.core.algorithm.state.StateManager: Method 'public void addDefaultRouteState(jsprit.core.problem.solution.route.state.StateFactory$StateId, jsprit.core.problem.solution.route.state.StateFactory$State)' has been deprecated
+INFO: 7011: jsprit.core.algorithm.state.StateManager: Method 'public void addDefaultRouteState(jsprit.core.problem.solution.route.state.StateFactory$StateId, java.lang.Class, java.lang.Object)' has been added
+INFO: 7007: jsprit.core.algorithm.state.StateManager: Method 'public jsprit.core.problem.solution.route.state.StateFactory$State getActivityState(jsprit.core.problem.solution.route.activity.TourActivity, jsprit.core.problem.solution.route.state.StateFactory$StateId)' has been deprecated
+INFO: 7011: jsprit.core.algorithm.state.StateManager: Method 'public java.lang.Object getActivityState(jsprit.core.problem.solution.route.activity.TourActivity, jsprit.core.problem.solution.route.state.StateFactory$StateId, java.lang.Class)' has been added
+INFO: 7007: jsprit.core.algorithm.state.StateManager: Method 'public jsprit.core.problem.solution.route.state.StateFactory$State getRouteState(jsprit.core.problem.solution.route.VehicleRoute, jsprit.core.problem.solution.route.state.StateFactory$StateId)' has been deprecated
+INFO: 7011: jsprit.core.algorithm.state.StateManager: Method 'public java.lang.Object getRouteState(jsprit.core.problem.solution.route.VehicleRoute, jsprit.core.problem.solution.route.state.StateFactory$StateId, java.lang.Class)' has been added
+INFO: 7007: jsprit.core.algorithm.state.StateManager: Method 'public void putActivityState(jsprit.core.problem.solution.route.activity.TourActivity, jsprit.core.problem.solution.route.state.StateFactory$StateId, jsprit.core.problem.solution.route.state.StateFactory$State)' has been deprecated
+INFO: 7007: jsprit.core.algorithm.state.StateManager: Method 'public void putRouteState(jsprit.core.problem.solution.route.VehicleRoute, jsprit.core.problem.solution.route.state.StateFactory$StateId, jsprit.core.problem.solution.route.state.StateFactory$State)' has been deprecated
+INFO: 7011: jsprit.core.algorithm.state.StateManager: Method 'public void putTypedActivityState(jsprit.core.problem.solution.route.activity.TourActivity, jsprit.core.problem.solution.route.state.StateFactory$StateId, java.lang.Class, java.lang.Object)' has been added
+INFO: 7011: jsprit.core.algorithm.state.StateManager: Method 'public void putTypedRouteState(jsprit.core.problem.solution.route.VehicleRoute, jsprit.core.problem.solution.route.state.StateFactory$StateId, java.lang.Class, java.lang.Object)' has been added
+INFO: 8000: jsprit.core.problem.Capacity: Class jsprit.core.problem.Capacity added
+INFO: 8000: jsprit.core.problem.Capacity$Builder: Class jsprit.core.problem.Capacity$Builder added
+INFO: 4000: jsprit.core.problem.constraint.ConstraintManager: Added jsprit.core.problem.constraint.SoftActivityConstraint to the set of implemented interfaces
+INFO: 4000: jsprit.core.problem.constraint.ConstraintManager: Added jsprit.core.problem.constraint.SoftConstraint to the set of implemented interfaces
+INFO: 4000: jsprit.core.problem.constraint.ConstraintManager: Added jsprit.core.problem.constraint.SoftRouteConstraint to the set of implemented interfaces
+INFO: 7011: jsprit.core.problem.constraint.ConstraintManager: Method 'public void addConstraint(jsprit.core.problem.constraint.SoftActivityConstraint)' has been added
+INFO: 7011: jsprit.core.problem.constraint.ConstraintManager: Method 'public void addConstraint(jsprit.core.problem.constraint.SoftRouteConstraint)' has been added
+INFO: 7011: jsprit.core.problem.constraint.ConstraintManager: Method 'public double getCosts(jsprit.core.problem.misc.JobInsertionContext)' has been added
+INFO: 7011: jsprit.core.problem.constraint.ConstraintManager: Method 'public double getCosts(jsprit.core.problem.misc.JobInsertionContext, jsprit.core.problem.solution.route.activity.TourActivity, jsprit.core.problem.solution.route.activity.TourActivity, jsprit.core.problem.solution.route.activity.TourActivity, double)' has been added
+INFO: 8000: jsprit.core.problem.constraint.SoftActivityConstraint: Class jsprit.core.problem.constraint.SoftActivityConstraint added
+INFO: 8000: jsprit.core.problem.constraint.SoftRouteConstraint: Class jsprit.core.problem.constraint.SoftRouteConstraint added
+ERROR: 7005: jsprit.core.problem.io.VrpXMLReader$ServiceBuilderFactory: Parameter 3 of 'public jsprit.core.problem.job.Service$Builder createBuilder(java.lang.String, java.lang.String, int)' has changed its type to java.lang.Integer
+INFO: 7007: jsprit.core.problem.job.Delivery$Builder: Method 'public jsprit.core.problem.job.Delivery$Builder newInstance(java.lang.String, int)' has been deprecated
+INFO: 7011: jsprit.core.problem.job.Delivery$Builder: Method 'public jsprit.core.problem.job.Delivery$Builder newInstance(java.lang.String)' has been added
+INFO: 7007: jsprit.core.problem.job.Job: Method 'public int getCapacityDemand()' has been deprecated
+ERROR: 7012: jsprit.core.problem.job.Job: Method 'public jsprit.core.problem.Capacity getSize()' has been added to an interface
+INFO: 7007: jsprit.core.problem.job.Pickup$Builder: Method 'public jsprit.core.problem.job.Pickup$Builder newInstance(java.lang.String, int)' has been deprecated
+INFO: 7011: jsprit.core.problem.job.Pickup$Builder: Method 'public jsprit.core.problem.job.Pickup$Builder newInstance(java.lang.String)' has been added
+INFO: 7007: jsprit.core.problem.job.Service: Method 'public int getCapacityDemand()' has been deprecated
+INFO: 7011: jsprit.core.problem.job.Service: Method 'public jsprit.core.problem.Capacity getSize()' has been added
+INFO: 6000: jsprit.core.problem.job.Service$Builder: Added protected field capacity
+INFO: 6000: jsprit.core.problem.job.Service$Builder: Added protected field capacityBuilder
+ERROR: 6001: jsprit.core.problem.job.Service$Builder: Removed field demand
+INFO: 7011: jsprit.core.problem.job.Service$Builder: Method 'public jsprit.core.problem.job.Service$Builder addSizeDimension(int, int)' has been added
+INFO: 7007: jsprit.core.problem.job.Service$Builder: Method 'public jsprit.core.problem.job.Service$Builder newInstance(java.lang.String, int)' has been deprecated
+INFO: 7011: jsprit.core.problem.job.Service$Builder: Method 'public jsprit.core.problem.job.Service$Builder newInstance(java.lang.String)' has been added
+INFO: 7007: jsprit.core.problem.job.Shipment: Method 'public int getCapacityDemand()' has been deprecated
+INFO: 7011: jsprit.core.problem.job.Shipment: Method 'public jsprit.core.problem.Capacity getSize()' has been added
+INFO: 7011: jsprit.core.problem.job.Shipment$Builder: Method 'public jsprit.core.problem.job.Shipment$Builder addSizeDimension(int, int)' has been added
+INFO: 7007: jsprit.core.problem.job.Shipment$Builder: Method 'public jsprit.core.problem.job.Shipment$Builder newInstance(java.lang.String, int)' has been deprecated
+INFO: 7011: jsprit.core.problem.job.Shipment$Builder: Method 'public jsprit.core.problem.job.Shipment$Builder newInstance(java.lang.String)' has been added
+INFO: 7007: jsprit.core.problem.solution.route.VehicleRoute: Method 'public jsprit.core.problem.solution.route.VehicleRoute newInstance(jsprit.core.problem.solution.route.activity.TourActivities, jsprit.core.problem.driver.Driver, jsprit.core.problem.vehicle.Vehicle)' has been deprecated
+INFO: 7007: jsprit.core.problem.solution.route.VehicleRoute: Method 'public void setDepartureTime(double)' has been deprecated
+INFO: 7007: jsprit.core.problem.solution.route.VehicleRoute: Method 'public void setVehicle(jsprit.core.problem.vehicle.Vehicle, double)' has been deprecated
+INFO: 7011: jsprit.core.problem.solution.route.VehicleRoute: Method 'public void setVehicleAndDepartureTime(jsprit.core.problem.vehicle.Vehicle, double)' has been added
+INFO: 7007: jsprit.core.problem.solution.route.activity.DeliverService: Method 'public int getCapacityDemand()' has been deprecated
+INFO: 7011: jsprit.core.problem.solution.route.activity.DeliverService: Method 'public jsprit.core.problem.Capacity getSize()' has been added
+INFO: 7007: jsprit.core.problem.solution.route.activity.DeliverShipment: Method 'public int getCapacityDemand()' has been deprecated
+INFO: 7011: jsprit.core.problem.solution.route.activity.DeliverShipment: Method 'public jsprit.core.problem.Capacity getSize()' has been added
+INFO: 7011: jsprit.core.problem.solution.route.activity.End: Method 'public jsprit.core.problem.Capacity getSize()' has been added
+INFO: 7007: jsprit.core.problem.solution.route.activity.PickupService: Method 'public int getCapacityDemand()' has been deprecated
+INFO: 7011: jsprit.core.problem.solution.route.activity.PickupService: Method 'public jsprit.core.problem.Capacity getSize()' has been added
+INFO: 7007: jsprit.core.problem.solution.route.activity.PickupShipment: Method 'public int getCapacityDemand()' has been deprecated
+INFO: 7011: jsprit.core.problem.solution.route.activity.PickupShipment: Method 'public jsprit.core.problem.Capacity getSize()' has been added
+ERROR: 6001: jsprit.core.problem.solution.route.activity.ServiceActivity: Removed field capacityDemand
+INFO: 7007: jsprit.core.problem.solution.route.activity.ServiceActivity: Method 'public int getCapacityDemand()' has been deprecated
+INFO: 7011: jsprit.core.problem.solution.route.activity.ServiceActivity: Method 'public jsprit.core.problem.Capacity getSize()' has been added
+INFO: 7011: jsprit.core.problem.solution.route.activity.Start: Method 'public jsprit.core.problem.Capacity getSize()' has been added
+INFO: 7007: jsprit.core.problem.solution.route.activity.TourActivity: Method 'public int getCapacityDemand()' has been deprecated
+ERROR: 7012: jsprit.core.problem.solution.route.activity.TourActivity: Method 'public jsprit.core.problem.Capacity getSize()' has been added to an interface
+INFO: 7007: jsprit.core.problem.solution.route.state.RouteAndActivityStateGetter: Method 'public jsprit.core.problem.solution.route.state.StateFactory$State getActivityState(jsprit.core.problem.solution.route.activity.TourActivity, jsprit.core.problem.solution.route.state.StateFactory$StateId)' has been deprecated
+ERROR: 7012: jsprit.core.problem.solution.route.state.RouteAndActivityStateGetter: Method 'public java.lang.Object getActivityState(jsprit.core.problem.solution.route.activity.TourActivity, jsprit.core.problem.solution.route.state.StateFactory$StateId, java.lang.Class)' has been added to an interface
+INFO: 7007: jsprit.core.problem.solution.route.state.RouteAndActivityStateGetter: Method 'public jsprit.core.problem.solution.route.state.StateFactory$State getRouteState(jsprit.core.problem.solution.route.VehicleRoute, jsprit.core.problem.solution.route.state.StateFactory$StateId)' has been deprecated
+ERROR: 7012: jsprit.core.problem.solution.route.state.RouteAndActivityStateGetter: Method 'public java.lang.Object getRouteState(jsprit.core.problem.solution.route.VehicleRoute, jsprit.core.problem.solution.route.state.StateFactory$StateId, java.lang.Class)' has been added to an interface
+INFO: 7007: jsprit.core.problem.vehicle.PenaltyVehicleType: Method 'public int getCapacity()' has been deprecated
+INFO: 7011: jsprit.core.problem.vehicle.PenaltyVehicleType: Method 'public jsprit.core.problem.Capacity getCapacityDimensions()' has been added
+INFO: 7007: jsprit.core.problem.vehicle.Vehicle: Method 'public int getCapacity()' has been deprecated
+INFO: 7007: jsprit.core.problem.vehicle.Vehicle: Method 'public jsprit.core.util.Coordinate getCoord()' has been deprecated
+ERROR: 7012: jsprit.core.problem.vehicle.Vehicle: Method 'public jsprit.core.util.Coordinate getEndLocationCoordinate()' has been added to an interface
+ERROR: 7012: jsprit.core.problem.vehicle.Vehicle: Method 'public java.lang.String getEndLocationId()' has been added to an interface
+INFO: 7007: jsprit.core.problem.vehicle.Vehicle: Method 'public java.lang.String getLocationId()' has been deprecated
+ERROR: 7012: jsprit.core.problem.vehicle.Vehicle: Method 'public jsprit.core.util.Coordinate getStartLocationCoordinate()' has been added to an interface
+ERROR: 7012: jsprit.core.problem.vehicle.Vehicle: Method 'public java.lang.String getStartLocationId()' has been added to an interface
+INFO: 7007: jsprit.core.problem.vehicle.VehicleFleetManager: Method 'public java.util.Collection getAvailableVehicles(java.lang.String, java.lang.String)' has been deprecated
+ERROR: 7012: jsprit.core.problem.vehicle.VehicleFleetManager: Method 'public java.util.Collection getAvailableVehicles(jsprit.core.problem.vehicle.Vehicle)' has been added to an interface
+INFO: 7011: jsprit.core.problem.vehicle.VehicleFleetManagerImpl$DefaultFleetManager: Method 'public java.util.Collection getAvailableVehicles(jsprit.core.problem.vehicle.Vehicle)' has been added
+INFO: 7007: jsprit.core.problem.vehicle.VehicleImpl: Method 'public int getCapacity()' has been deprecated
+INFO: 7007: jsprit.core.problem.vehicle.VehicleImpl: Method 'public jsprit.core.util.Coordinate getCoord()' has been deprecated
+INFO: 7011: jsprit.core.problem.vehicle.VehicleImpl: Method 'public jsprit.core.util.Coordinate getEndLocationCoordinate()' has been added
+INFO: 7011: jsprit.core.problem.vehicle.VehicleImpl: Method 'public java.lang.String getEndLocationId()' has been added
+INFO: 7007: jsprit.core.problem.vehicle.VehicleImpl: Method 'public java.lang.String getLocationId()' has been deprecated
+INFO: 7011: jsprit.core.problem.vehicle.VehicleImpl: Method 'public jsprit.core.util.Coordinate getStartLocationCoordinate()' has been added
+INFO: 7011: jsprit.core.problem.vehicle.VehicleImpl: Method 'public java.lang.String getStartLocationId()' has been added
+INFO: 7011: jsprit.core.problem.vehicle.VehicleImpl$Builder: Method 'public jsprit.core.problem.vehicle.VehicleImpl$Builder setEndLocationCoordinate(jsprit.core.util.Coordinate)' has been added
+INFO: 7011: jsprit.core.problem.vehicle.VehicleImpl$Builder: Method 'public jsprit.core.problem.vehicle.VehicleImpl$Builder setEndLocationId(java.lang.String)' has been added
+INFO: 7007: jsprit.core.problem.vehicle.VehicleImpl$Builder: Method 'public jsprit.core.problem.vehicle.VehicleImpl$Builder setLocationCoord(jsprit.core.util.Coordinate)' has been deprecated
+INFO: 7007: jsprit.core.problem.vehicle.VehicleImpl$Builder: Method 'public jsprit.core.problem.vehicle.VehicleImpl$Builder setLocationId(java.lang.String)' has been deprecated
+INFO: 7011: jsprit.core.problem.vehicle.VehicleImpl$Builder: Method 'public jsprit.core.problem.vehicle.VehicleImpl$Builder setStartLocationCoordinate(jsprit.core.util.Coordinate)' has been added
+INFO: 7011: jsprit.core.problem.vehicle.VehicleImpl$Builder: Method 'public jsprit.core.problem.vehicle.VehicleImpl$Builder setStartLocationId(java.lang.String)' has been added
+INFO: 7007: jsprit.core.problem.vehicle.VehicleType: Method 'public int getCapacity()' has been deprecated
+ERROR: 7012: jsprit.core.problem.vehicle.VehicleType: Method 'public jsprit.core.problem.Capacity getCapacityDimensions()' has been added to an interface
+INFO: 7007: jsprit.core.problem.vehicle.VehicleTypeImpl: Method 'public int getCapacity()' has been deprecated
+INFO: 7011: jsprit.core.problem.vehicle.VehicleTypeImpl: Method 'public jsprit.core.problem.Capacity getCapacityDimensions()' has been added
+INFO: 7011: jsprit.core.problem.vehicle.VehicleTypeImpl$Builder: Method 'public VehicleTypeImpl$Builder(java.lang.String)' has been added
+INFO: 7011: jsprit.core.problem.vehicle.VehicleTypeImpl$Builder: Method 'public jsprit.core.problem.vehicle.VehicleTypeImpl$Builder addCapacityDimension(int, int)' has been added
+INFO: 7007: jsprit.core.problem.vehicle.VehicleTypeImpl$Builder: Method 'public jsprit.core.problem.vehicle.VehicleTypeImpl$Builder newInstance(java.lang.String, int)' has been deprecated
+INFO: 7011: jsprit.core.problem.vehicle.VehicleTypeImpl$Builder: Method 'public jsprit.core.problem.vehicle.VehicleTypeImpl$Builder newInstance(java.lang.String)' has been added
+INFO: 7011: jsprit.core.problem.vehicle.VehicleTypeImpl$Builder: Method 'public jsprit.core.problem.vehicle.VehicleTypeImpl$Builder setCapacityDimensions(jsprit.core.problem.Capacity)' has been added
+ERROR: 8001: jsprit.core.util.VrpVerifier: Class jsprit.core.util.VrpVerifier removed
