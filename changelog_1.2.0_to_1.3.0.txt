@@ -1,0 +1,85 @@
+ERROR: 7002: jsprit.core.algorithm.VehicleRoutingAlgorithm: Method 'public void setPrematureBreak(int)' has been removed
+INFO: 8000: jsprit.core.algorithm.VehicleRoutingAlgorithmBuilder: Class jsprit.core.algorithm.VehicleRoutingAlgorithmBuilder added
+INFO: 7007: jsprit.core.algorithm.acceptor.SchrimpfAcceptance: Method 'public SchrimpfAcceptance(int, double, int)' has been deprecated
+INFO: 7011: jsprit.core.algorithm.acceptor.SchrimpfAcceptance: Method 'public SchrimpfAcceptance(int, double)' has been added
+INFO: 7011: jsprit.core.algorithm.acceptor.SchrimpfAcceptance: Method 'public double getInitialThreshold()' has been added
+INFO: 1000: jsprit.core.algorithm.acceptor.SchrimpfInitialThresholdGenerator: Increased visibility of class from package to public
+ERROR: 7006: jsprit.core.algorithm.io.AlgorithmConfigXmlReader: Return type of method 'public void setSchemaValidation(boolean)' has been changed to jsprit.core.algorithm.io.AlgorithmConfigXmlReader
+ERROR: 7004: jsprit.core.algorithm.io.VehicleRoutingAlgorithms: In method 'public jsprit.core.algorithm.VehicleRoutingAlgorithm readAndCreateAlgorithm(jsprit.core.problem.VehicleRoutingProblem, org.apache.commons.configuration.XMLConfiguration)' the number of arguments has changed
+INFO: 7008: jsprit.core.algorithm.io.VehicleRoutingAlgorithms: Method 'public jsprit.core.algorithm.VehicleRoutingAlgorithm readAndCreateAlgorithm(jsprit.core.problem.VehicleRoutingProblem, org.apache.commons.configuration.XMLConfiguration)' is no longer deprecated
+INFO: 7011: jsprit.core.algorithm.recreate.BestInsertionBuilder: Method 'public jsprit.core.algorithm.recreate.BestInsertionBuilder setLocalLevel(boolean)' has been added
+INFO: 7011: jsprit.core.algorithm.recreate.BestInsertionBuilder: Method 'public jsprit.core.algorithm.recreate.BestInsertionBuilder setRouteLevel(int, int, boolean)' has been added
+INFO: 8000: jsprit.core.algorithm.recreate.DellAmicoFixCostCalculator: Class jsprit.core.algorithm.recreate.DellAmicoFixCostCalculator added
+INFO: 8000: jsprit.core.algorithm.recreate.NoSolutionFoundException: Class jsprit.core.algorithm.recreate.NoSolutionFoundException added
+INFO: 8000: jsprit.core.algorithm.recreate.VariableTransportCostCalculator: Class jsprit.core.algorithm.recreate.VariableTransportCostCalculator added
+ERROR: 7002: jsprit.core.algorithm.state.StateManager: Method 'public StateManager(jsprit.core.problem.VehicleRoutingProblem)' has been removed
+ERROR: 7002: jsprit.core.algorithm.state.StateManager: Method 'public void addDefaultActivityState(jsprit.core.problem.solution.route.state.StateFactory$StateId, jsprit.core.problem.solution.route.state.StateFactory$State)' has been removed
+INFO: 7011: jsprit.core.algorithm.state.StateManager: Method 'public void addDefaultProblemState(jsprit.core.problem.solution.route.state.StateFactory$StateId, java.lang.Class, java.lang.Object)' has been added
+ERROR: 7002: jsprit.core.algorithm.state.StateManager: Method 'public void addDefaultRouteState(jsprit.core.problem.solution.route.state.StateFactory$StateId, jsprit.core.problem.solution.route.state.StateFactory$State)' has been removed
+ERROR: 7002: jsprit.core.algorithm.state.StateManager: Method 'public jsprit.core.problem.solution.route.state.StateFactory$State getActivityState(jsprit.core.problem.solution.route.activity.TourActivity, jsprit.core.problem.solution.route.state.StateFactory$StateId)' has been removed
+INFO: 7011: jsprit.core.algorithm.state.StateManager: Method 'public java.lang.Object getProblemState(jsprit.core.problem.solution.route.state.StateFactory$StateId, java.lang.Class)' has been added
+ERROR: 7002: jsprit.core.algorithm.state.StateManager: Method 'public jsprit.core.problem.solution.route.state.StateFactory$State getRouteState(jsprit.core.problem.solution.route.VehicleRoute, jsprit.core.problem.solution.route.state.StateFactory$StateId)' has been removed
+ERROR: 7002: jsprit.core.algorithm.state.StateManager: Method 'public void putActivityState(jsprit.core.problem.solution.route.activity.TourActivity, jsprit.core.problem.solution.route.state.StateFactory$StateId, jsprit.core.problem.solution.route.state.StateFactory$State)' has been removed
+INFO: 7011: jsprit.core.algorithm.state.StateManager: Method 'public void putProblemState(jsprit.core.problem.solution.route.state.StateFactory$StateId, java.lang.Class, java.lang.Object)' has been added
+ERROR: 7002: jsprit.core.algorithm.state.StateManager: Method 'public void putRouteState(jsprit.core.problem.solution.route.VehicleRoute, jsprit.core.problem.solution.route.state.StateFactory$StateId, jsprit.core.problem.solution.route.state.StateFactory$State)' has been removed
+ERROR: 7002: jsprit.core.problem.VehicleRoutingProblem: Method 'public jsprit.core.problem.VehicleRoutingProblem$FleetComposition getFleetComposition()' has been removed
+INFO: 7011: jsprit.core.problem.VehicleRoutingProblem: Method 'public java.util.Collection getInitialVehicleRoutes()' has been added
+INFO: 7011: jsprit.core.problem.VehicleRoutingProblem: Method 'public jsprit.core.util.Locations getLocations()' has been added
+ERROR: 7002: jsprit.core.problem.VehicleRoutingProblem: Method 'public jsprit.core.util.Neighborhood getNeighborhood()' has been removed
+ERROR: 7002: jsprit.core.problem.VehicleRoutingProblem: Method 'public java.util.Collection getProblemConstraints()' has been removed
+INFO: 7008: jsprit.core.problem.VehicleRoutingProblem$Builder: Method 'public VehicleRoutingProblem$Builder()' is no longer deprecated
+INFO: 7011: jsprit.core.problem.VehicleRoutingProblem$Builder: Method 'public jsprit.core.problem.VehicleRoutingProblem$Builder addInitialVehicleRoute(jsprit.core.problem.solution.route.VehicleRoute)' has been added
+INFO: 7011: jsprit.core.problem.VehicleRoutingProblem$Builder: Method 'public jsprit.core.problem.VehicleRoutingProblem$Builder addInitialVehicleRoutes(java.util.Collection)' has been added
+ERROR: 7002: jsprit.core.problem.VehicleRoutingProblem$Builder: Method 'public void addProblemConstraint(jsprit.core.problem.VehicleRoutingProblem$Constraint)' has been removed
+INFO: 7008: jsprit.core.problem.VehicleRoutingProblem$Builder: Method 'public jsprit.core.problem.VehicleRoutingProblem$Builder addService(jsprit.core.problem.job.Service)' is no longer deprecated
+ERROR: 7009: jsprit.core.problem.VehicleRoutingProblem$Builder: Accessibility of method 'public jsprit.core.problem.VehicleRoutingProblem$Builder addService(jsprit.core.problem.job.Service)' has been decreased from public to private
+ERROR: 7002: jsprit.core.problem.VehicleRoutingProblem$Builder: Method 'public jsprit.core.problem.VehicleRoutingProblem$Builder addVehicleType(jsprit.core.problem.vehicle.VehicleType)' has been removed
+INFO: 7007: jsprit.core.problem.VehicleRoutingProblem$Builder: Method 'public java.lang.String createLocation(double, double)' has been deprecated
+ERROR: 7002: jsprit.core.problem.VehicleRoutingProblem$Builder: Method 'public java.util.Collection getAddedServices()' has been removed
+ERROR: 7002: jsprit.core.problem.VehicleRoutingProblem$Builder: Method 'public jsprit.core.problem.VehicleRoutingProblem$Builder setFleetComposition(jsprit.core.problem.VehicleRoutingProblem$FleetComposition)' has been removed
+ERROR: 7002: jsprit.core.problem.VehicleRoutingProblem$Builder: Method 'public jsprit.core.problem.VehicleRoutingProblem$Builder setNeighborhood(jsprit.core.util.Neighborhood)' has been removed
+ERROR: 8001: jsprit.core.problem.VehicleRoutingProblem$Constraint: Class jsprit.core.problem.VehicleRoutingProblem$Constraint removed
+ERROR: 7002: jsprit.core.problem.job.Delivery$Builder: Method 'public jsprit.core.problem.job.Delivery$Builder newInstance(java.lang.String, int)' has been removed
+ERROR: 7002: jsprit.core.problem.job.Job: Method 'public int getCapacityDemand()' has been removed
+ERROR: 7002: jsprit.core.problem.job.Pickup$Builder: Method 'public jsprit.core.problem.job.Pickup$Builder newInstance(java.lang.String, int)' has been removed
+ERROR: 7002: jsprit.core.problem.job.Service: Method 'public int getCapacityDemand()' has been removed
+ERROR: 7002: jsprit.core.problem.job.Service$Builder: Method 'public jsprit.core.problem.job.Service$Builder newInstance(java.lang.String, int)' has been removed
+ERROR: 7002: jsprit.core.problem.job.Shipment: Method 'public int getCapacityDemand()' has been removed
+ERROR: 7002: jsprit.core.problem.job.Shipment$Builder: Method 'public jsprit.core.problem.job.Shipment$Builder newInstance(java.lang.String, int)' has been removed
+ERROR: 7002: jsprit.core.problem.solution.route.VehicleRoute: Method 'public jsprit.core.problem.solution.route.VehicleRoute newInstance(jsprit.core.problem.solution.route.activity.TourActivities, jsprit.core.problem.driver.Driver, jsprit.core.problem.vehicle.Vehicle)' has been removed
+ERROR: 7002: jsprit.core.problem.solution.route.VehicleRoute: Method 'public void setDepartureTime(double)' has been removed
+ERROR: 7002: jsprit.core.problem.solution.route.VehicleRoute: Method 'public void setVehicle(jsprit.core.problem.vehicle.Vehicle, double)' has been removed
+INFO: 7011: jsprit.core.problem.solution.route.VehicleRoute$Builder: Method 'public jsprit.core.problem.solution.route.VehicleRoute$Builder newInstance(jsprit.core.problem.vehicle.Vehicle)' has been added
+ERROR: 7002: jsprit.core.problem.solution.route.activity.DeliverService: Method 'public int getCapacityDemand()' has been removed
+ERROR: 7002: jsprit.core.problem.solution.route.activity.DeliverShipment: Method 'public int getCapacityDemand()' has been removed
+ERROR: 7002: jsprit.core.problem.solution.route.activity.End: Method 'public int getCapacityDemand()' has been removed
+ERROR: 7002: jsprit.core.problem.solution.route.activity.PickupService: Method 'public int getCapacityDemand()' has been removed
+ERROR: 7002: jsprit.core.problem.solution.route.activity.PickupShipment: Method 'public int getCapacityDemand()' has been removed
+ERROR: 7002: jsprit.core.problem.solution.route.activity.ServiceActivity: Method 'public int getCapacityDemand()' has been removed
+ERROR: 7002: jsprit.core.problem.solution.route.activity.Start: Method 'public int getCapacityDemand()' has been removed
+ERROR: 7002: jsprit.core.problem.solution.route.activity.TourActivity: Method 'public int getCapacityDemand()' has been removed
+ERROR: 7002: jsprit.core.problem.solution.route.state.RouteAndActivityStateGetter: Method 'public jsprit.core.problem.solution.route.state.StateFactory$State getActivityState(jsprit.core.problem.solution.route.activity.TourActivity, jsprit.core.problem.solution.route.state.StateFactory$StateId)' has been removed
+ERROR: 7002: jsprit.core.problem.solution.route.state.RouteAndActivityStateGetter: Method 'public jsprit.core.problem.solution.route.state.StateFactory$State getRouteState(jsprit.core.problem.solution.route.VehicleRoute, jsprit.core.problem.solution.route.state.StateFactory$StateId)' has been removed
+ERROR: 7002: jsprit.core.problem.vehicle.PenaltyVehicleType: Method 'public int getCapacity()' has been removed
+ERROR: 7002: jsprit.core.problem.vehicle.Vehicle: Method 'public int getCapacity()' has been removed
+ERROR: 7002: jsprit.core.problem.vehicle.Vehicle: Method 'public jsprit.core.util.Coordinate getCoord()' has been removed
+ERROR: 7002: jsprit.core.problem.vehicle.Vehicle: Method 'public java.lang.String getLocationId()' has been removed
+ERROR: 7002: jsprit.core.problem.vehicle.VehicleFleetManager: Method 'public java.util.Collection getAvailableVehicles(java.lang.String, java.lang.String)' has been removed
+ERROR: 7002: jsprit.core.problem.vehicle.VehicleFleetManagerImpl$DefaultFleetManager: Method 'public java.util.Collection getAvailableVehicles(java.lang.String, java.lang.String)' has been removed
+ERROR: 7002: jsprit.core.problem.vehicle.VehicleImpl: Method 'public int getCapacity()' has been removed
+ERROR: 7002: jsprit.core.problem.vehicle.VehicleImpl: Method 'public jsprit.core.util.Coordinate getCoord()' has been removed
+ERROR: 7002: jsprit.core.problem.vehicle.VehicleImpl: Method 'public java.lang.String getLocationId()' has been removed
+ERROR: 7002: jsprit.core.problem.vehicle.VehicleImpl: Method 'public jsprit.core.problem.vehicle.VehicleImpl$NoVehicle noVehicle()' has been removed
+ERROR: 7002: jsprit.core.problem.vehicle.VehicleImpl$Builder: Method 'public jsprit.core.problem.vehicle.VehicleImpl$Builder setLocationCoord(jsprit.core.util.Coordinate)' has been removed
+ERROR: 7002: jsprit.core.problem.vehicle.VehicleImpl$Builder: Method 'public jsprit.core.problem.vehicle.VehicleImpl$Builder setLocationId(java.lang.String)' has been removed
+ERROR: 7002: jsprit.core.problem.vehicle.VehicleImpl$NoVehicle: Method 'public int getCapacity()' has been removed
+ERROR: 7002: jsprit.core.problem.vehicle.VehicleType: Method 'public int getCapacity()' has been removed
+ERROR: 7002: jsprit.core.problem.vehicle.VehicleTypeImpl: Method 'public VehicleTypeImpl(java.lang.String, int, jsprit.core.problem.vehicle.VehicleTypeImpl$VehicleCostParams)' has been removed
+ERROR: 7002: jsprit.core.problem.vehicle.VehicleTypeImpl: Method 'public int getCapacity()' has been removed
+ERROR: 7002: jsprit.core.problem.vehicle.VehicleTypeImpl: Method 'public jsprit.core.problem.vehicle.VehicleTypeImpl newInstance(java.lang.String, int, jsprit.core.problem.vehicle.VehicleTypeImpl$VehicleCostParams)' has been removed
+ERROR: 7009: jsprit.core.problem.vehicle.VehicleTypeImpl$Builder: Accessibility of method 'public VehicleTypeImpl$Builder(java.lang.String)' has been decreased from public to private
+ERROR: 7002: jsprit.core.problem.vehicle.VehicleTypeImpl$Builder: Method 'public jsprit.core.problem.vehicle.VehicleTypeImpl$Builder newInstance(java.lang.String, int)' has been removed
+INFO: 1000: jsprit.core.problem.vehicle.VehicleTypeKey: Increased visibility of class from package to public
+ERROR: 7002: jsprit.core.util.Solutions: Method 'public jsprit.core.problem.solution.VehicleRoutingProblemSolution getBest(java.util.Collection)' has been removed
+INFO: 8000: jsprit.core.util.Time: Class jsprit.core.util.Time added
+INFO: 7010: jsprit.core.util.VehicleRoutingTransportCostsMatrix: Accessibility of method 'private double getDistance(java.lang.String, java.lang.String)' has been increased from private to public
