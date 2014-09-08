@@ -1,0 +1,188 @@
+ERROR: 6011: jsprit.core.algorithm.VehicleRoutingAlgorithm: Field NOBREAK has been removed, but it was previously a constant
+INFO: 7011: jsprit.core.algorithm.VehicleRoutingAlgorithm: Method 'public int getMaxIterations()' has been added
+INFO: 7007: jsprit.core.algorithm.VehicleRoutingAlgorithm: Method 'public int getNuOfIterations()' has been deprecated
+INFO: 7011: jsprit.core.algorithm.VehicleRoutingAlgorithm: Method 'public void setMaxIterations(int)' has been added
+INFO: 7007: jsprit.core.algorithm.VehicleRoutingAlgorithm: Method 'public void setNuOfIterations(int)' has been deprecated
+ERROR: 7002: jsprit.core.algorithm.acceptor.SchrimpfAcceptance: Method 'public SchrimpfAcceptance(int, double, int)' has been removed
+INFO: 7011: jsprit.core.algorithm.io.VehicleRoutingAlgorithms: Method 'public jsprit.core.algorithm.VehicleRoutingAlgorithm createAlgorithm(jsprit.core.problem.VehicleRoutingProblem, int, jsprit.core.algorithm.io.AlgorithmConfig)' has been added
+INFO: 7011: jsprit.core.algorithm.io.VehicleRoutingAlgorithms: Method 'public jsprit.core.algorithm.VehicleRoutingAlgorithm readAndCreateAlgorithm(jsprit.core.problem.VehicleRoutingProblem, int, java.net.URL)' has been added
+ERROR: 7006: jsprit.core.algorithm.recreate.ActivityInsertionCostsCalculator: Return type of method 'public jsprit.core.algorithm.recreate.ActivityInsertionCostsCalculator$ActivityInsertionCosts getCosts(jsprit.core.problem.misc.JobInsertionContext, jsprit.core.problem.solution.route.activity.TourActivity, jsprit.core.problem.solution.route.activity.TourActivity, jsprit.core.problem.solution.route.activity.TourActivity, double)' has been changed to double
+ERROR: 7006: jsprit.core.algorithm.recreate.InsertionStrategy: Return type of method 'public void insertJobs(java.util.Collection, java.util.Collection)' has been changed to java.util.Collection
+INFO: 8000: jsprit.core.algorithm.state.InternalStates: Class jsprit.core.algorithm.state.InternalStates added
+INFO: 8000: jsprit.core.algorithm.state.StateId: Class jsprit.core.algorithm.state.StateId added
+ERROR: 7005: jsprit.core.algorithm.state.StateManager: Parameter 1 of 'public StateManager(jsprit.core.problem.cost.VehicleRoutingTransportCosts)' has changed its type to jsprit.core.problem.VehicleRoutingProblem
+ERROR: 7002: jsprit.core.algorithm.state.StateManager: Method 'public void addDefaultActivityState(jsprit.core.problem.solution.route.state.StateFactory$StateId, java.lang.Class, java.lang.Object)' has been removed
+ERROR: 7002: jsprit.core.algorithm.state.StateManager: Method 'public void addDefaultProblemState(jsprit.core.problem.solution.route.state.StateFactory$StateId, java.lang.Class, java.lang.Object)' has been removed
+ERROR: 7002: jsprit.core.algorithm.state.StateManager: Method 'public void addDefaultRouteState(jsprit.core.problem.solution.route.state.StateFactory$StateId, java.lang.Class, java.lang.Object)' has been removed
+INFO: 7011: jsprit.core.algorithm.state.StateManager: Method 'public jsprit.core.algorithm.state.StateId createStateId(java.lang.String)' has been added
+ERROR: 7005: jsprit.core.algorithm.state.StateManager: Parameter 2 of 'public java.lang.Object getActivityState(jsprit.core.problem.solution.route.activity.TourActivity, jsprit.core.problem.solution.route.state.StateFactory$StateId, java.lang.Class)' has changed its type to jsprit.core.algorithm.state.StateId
+INFO: 7011: jsprit.core.algorithm.state.StateManager: Method 'public java.lang.Object getActivityState(jsprit.core.problem.solution.route.activity.TourActivity, jsprit.core.problem.vehicle.Vehicle, jsprit.core.algorithm.state.StateId, java.lang.Class)' has been added
+ERROR: 7005: jsprit.core.algorithm.state.StateManager: Parameter 1 of 'public java.lang.Object getProblemState(jsprit.core.problem.solution.route.state.StateFactory$StateId, java.lang.Class)' has changed its type to jsprit.core.algorithm.state.StateId
+ERROR: 7005: jsprit.core.algorithm.state.StateManager: Parameter 2 of 'public java.lang.Object getRouteState(jsprit.core.problem.solution.route.VehicleRoute, jsprit.core.problem.solution.route.state.StateFactory$StateId, java.lang.Class)' has changed its type to jsprit.core.algorithm.state.StateId
+INFO: 7011: jsprit.core.algorithm.state.StateManager: Method 'public java.lang.Object getRouteState(jsprit.core.problem.solution.route.VehicleRoute, jsprit.core.problem.vehicle.Vehicle, jsprit.core.algorithm.state.StateId, java.lang.Class)' has been added
+INFO: 7011: jsprit.core.algorithm.state.StateManager: Method 'public boolean hasActivityState(jsprit.core.problem.solution.route.activity.TourActivity, jsprit.core.problem.vehicle.Vehicle, jsprit.core.algorithm.state.StateId)' has been added
+INFO: 7011: jsprit.core.algorithm.state.StateManager: Method 'public boolean hasRouteState(jsprit.core.problem.solution.route.VehicleRoute, jsprit.core.problem.vehicle.Vehicle, jsprit.core.algorithm.state.StateId)' has been added
+INFO: 7011: jsprit.core.algorithm.state.StateManager: Method 'public void putActivityState(jsprit.core.problem.solution.route.activity.TourActivity, jsprit.core.algorithm.state.StateId, java.lang.Object)' has been added
+INFO: 7011: jsprit.core.algorithm.state.StateManager: Method 'public void putActivityState(jsprit.core.problem.solution.route.activity.TourActivity, jsprit.core.problem.vehicle.Vehicle, jsprit.core.algorithm.state.StateId, java.lang.Object)' has been added
+ERROR: 7005: jsprit.core.algorithm.state.StateManager: Parameter 1 of 'public void putProblemState(jsprit.core.problem.solution.route.state.StateFactory$StateId, java.lang.Class, java.lang.Object)' has changed its type to jsprit.core.algorithm.state.StateId
+INFO: 7011: jsprit.core.algorithm.state.StateManager: Method 'public void putRouteState(jsprit.core.problem.solution.route.VehicleRoute, jsprit.core.algorithm.state.StateId, java.lang.Object)' has been added
+INFO: 7011: jsprit.core.algorithm.state.StateManager: Method 'public void putRouteState(jsprit.core.problem.solution.route.VehicleRoute, jsprit.core.problem.vehicle.Vehicle, jsprit.core.algorithm.state.StateId, java.lang.Object)' has been added
+ERROR: 7002: jsprit.core.algorithm.state.StateManager: Method 'public void putTypedActivityState(jsprit.core.problem.solution.route.activity.TourActivity, jsprit.core.problem.solution.route.state.StateFactory$StateId, java.lang.Class, java.lang.Object)' has been removed
+ERROR: 7002: jsprit.core.algorithm.state.StateManager: Method 'public void putTypedRouteState(jsprit.core.problem.solution.route.VehicleRoute, jsprit.core.problem.solution.route.state.StateFactory$StateId, java.lang.Class, java.lang.Object)' has been removed
+INFO: 7011: jsprit.core.algorithm.state.StateManager: Method 'public boolean timeWindowUpdateIsActivated()' has been added
+INFO: 7011: jsprit.core.algorithm.state.StateManager: Method 'public void updateSkillStates()' has been added
+INFO: 8000: jsprit.core.algorithm.state.UpdateSkills: Class jsprit.core.algorithm.state.UpdateSkills added
+INFO: 8000: jsprit.core.algorithm.state.UpdateVehicleDependentPracticalTimeWindows: Class jsprit.core.algorithm.state.UpdateVehicleDependentPracticalTimeWindows added
+INFO: 8000: jsprit.core.algorithm.state.UpdateVehicleDependentPracticalTimeWindows$VehiclesToUpdate: Class jsprit.core.algorithm.state.UpdateVehicleDependentPracticalTimeWindows$VehiclesToUpdate added
+INFO: 8000: jsprit.core.problem.AbstractActivity: Class jsprit.core.problem.AbstractActivity added
+INFO: 8000: jsprit.core.problem.AbstractJob: Class jsprit.core.problem.AbstractJob added
+INFO: 8000: jsprit.core.problem.AbstractVehicle: Class jsprit.core.problem.AbstractVehicle added
+INFO: 8000: jsprit.core.problem.AbstractVehicle$AbstractTypeKey: Class jsprit.core.problem.AbstractVehicle$AbstractTypeKey added
+INFO: 8000: jsprit.core.problem.HasId: Class jsprit.core.problem.HasId added
+INFO: 8000: jsprit.core.problem.HasIndex: Class jsprit.core.problem.HasIndex added
+INFO: 8000: jsprit.core.problem.JobActivityFactory: Class jsprit.core.problem.JobActivityFactory added
+INFO: 8000: jsprit.core.problem.Skills: Class jsprit.core.problem.Skills added
+INFO: 8000: jsprit.core.problem.Skills$Builder: Class jsprit.core.problem.Skills$Builder added
+INFO: 7011: jsprit.core.problem.VehicleRoutingProblem: Method 'public java.util.List copyAndGetActivities(jsprit.core.problem.job.Job)' has been added
+INFO: 7011: jsprit.core.problem.VehicleRoutingProblem: Method 'public java.util.List getActivities(jsprit.core.problem.job.Job)' has been added
+ERROR: 7002: jsprit.core.problem.VehicleRoutingProblem: Method 'public java.util.Collection getConstraints()' has been removed
+INFO: 7011: jsprit.core.problem.VehicleRoutingProblem: Method 'public jsprit.core.problem.JobActivityFactory getJobActivityFactory()' has been added
+INFO: 7011: jsprit.core.problem.VehicleRoutingProblem: Method 'public int getNuActivities()' has been added
+ERROR: 7002: jsprit.core.problem.VehicleRoutingProblem$Builder: Method 'public jsprit.core.problem.VehicleRoutingProblem$Builder addConstraint(jsprit.core.problem.constraint.Constraint)' has been removed
+INFO: 7007: jsprit.core.problem.VehicleRoutingProblem$Builder: Method 'public jsprit.core.problem.VehicleRoutingProblem$Builder addJob(jsprit.core.problem.job.Job)' has been deprecated
+INFO: 7011: jsprit.core.problem.VehicleRoutingProblem$Builder: Method 'public jsprit.core.problem.VehicleRoutingProblem$Builder addJob(jsprit.core.problem.AbstractJob)' has been added
+INFO: 7007: jsprit.core.problem.VehicleRoutingProblem$Builder: Method 'public jsprit.core.problem.VehicleRoutingProblem$Builder addPenaltyVehicles(double)' has been deprecated
+INFO: 7007: jsprit.core.problem.VehicleRoutingProblem$Builder: Method 'public jsprit.core.problem.VehicleRoutingProblem$Builder addPenaltyVehicles(double, double)' has been deprecated
+INFO: 7007: jsprit.core.problem.VehicleRoutingProblem$Builder: Method 'public jsprit.core.problem.VehicleRoutingProblem$Builder addVehicle(jsprit.core.problem.vehicle.Vehicle)' has been deprecated
+INFO: 7011: jsprit.core.problem.VehicleRoutingProblem$Builder: Method 'public jsprit.core.problem.VehicleRoutingProblem$Builder addVehicle(jsprit.core.problem.AbstractVehicle)' has been added
+ERROR: 8001: jsprit.core.problem.VehicleRoutingProblem$FleetComposition: Class jsprit.core.problem.VehicleRoutingProblem$FleetComposition removed
+INFO: 4000: jsprit.core.problem.constraint.ConstraintManager: Added jsprit.core.problem.constraint.HardActivityConstraint to the set of implemented interfaces
+ERROR: 4001: jsprit.core.problem.constraint.ConstraintManager: Removed jsprit.core.problem.constraint.HardActivityStateLevelConstraint from the set of implemented interfaces
+INFO: 4000: jsprit.core.problem.constraint.ConstraintManager: Added jsprit.core.problem.constraint.HardRouteConstraint to the set of implemented interfaces
+ERROR: 4001: jsprit.core.problem.constraint.ConstraintManager: Removed jsprit.core.problem.constraint.HardRouteStateLevelConstraint from the set of implemented interfaces
+ERROR: 7005: jsprit.core.problem.constraint.ConstraintManager: Parameter 1 of 'public void addConstraint(jsprit.core.problem.constraint.HardActivityStateLevelConstraint, jsprit.core.problem.constraint.ConstraintManager$Priority)' has changed its type to jsprit.core.problem.constraint.HardActivityConstraint
+ERROR: 7005: jsprit.core.problem.constraint.ConstraintManager: Parameter 1 of 'public void addConstraint(jsprit.core.problem.constraint.HardRouteStateLevelConstraint)' has changed its type to jsprit.core.problem.constraint.HardRouteConstraint
+INFO: 7011: jsprit.core.problem.constraint.ConstraintManager: Method 'public void addSkillsConstraint()' has been added
+ERROR: 7006: jsprit.core.problem.constraint.ConstraintManager: Return type of method 'public jsprit.core.problem.constraint.HardActivityStateLevelConstraint$ConstraintsStatus fulfilled(jsprit.core.problem.misc.JobInsertionContext, jsprit.core.problem.solution.route.activity.TourActivity, jsprit.core.problem.solution.route.activity.TourActivity, jsprit.core.problem.solution.route.activity.TourActivity, double)' has been changed to jsprit.core.problem.constraint.HardActivityConstraint$ConstraintsStatus
+INFO: 8000: jsprit.core.problem.constraint.HardActivityConstraint: Class jsprit.core.problem.constraint.HardActivityConstraint added
+INFO: 8000: jsprit.core.problem.constraint.HardActivityConstraint$ConstraintsStatus: Class jsprit.core.problem.constraint.HardActivityConstraint$ConstraintsStatus added
+ERROR: 8001: jsprit.core.problem.constraint.HardActivityStateLevelConstraint: Class jsprit.core.problem.constraint.HardActivityStateLevelConstraint removed
+ERROR: 8001: jsprit.core.problem.constraint.HardActivityStateLevelConstraint$ConstraintsStatus: Class jsprit.core.problem.constraint.HardActivityStateLevelConstraint$ConstraintsStatus removed
+INFO: 8000: jsprit.core.problem.constraint.HardRouteConstraint: Class jsprit.core.problem.constraint.HardRouteConstraint added
+ERROR: 8001: jsprit.core.problem.constraint.HardRouteStateLevelConstraint: Class jsprit.core.problem.constraint.HardRouteStateLevelConstraint removed
+INFO: 8000: jsprit.core.problem.constraint.HardSkillConstraint: Class jsprit.core.problem.constraint.HardSkillConstraint added
+INFO: 4000: jsprit.core.problem.constraint.PickupAndDeliverShipmentLoadActivityLevelConstraint: Added jsprit.core.problem.constraint.HardActivityConstraint to the set of implemented interfaces
+ERROR: 4001: jsprit.core.problem.constraint.PickupAndDeliverShipmentLoadActivityLevelConstraint: Removed jsprit.core.problem.constraint.HardActivityStateLevelConstraint from the set of implemented interfaces
+ERROR: 7006: jsprit.core.problem.constraint.PickupAndDeliverShipmentLoadActivityLevelConstraint: Return type of method 'public jsprit.core.problem.constraint.HardActivityStateLevelConstraint$ConstraintsStatus fulfilled(jsprit.core.problem.misc.JobInsertionContext, jsprit.core.problem.solution.route.activity.TourActivity, jsprit.core.problem.solution.route.activity.TourActivity, jsprit.core.problem.solution.route.activity.TourActivity, double)' has been changed to jsprit.core.problem.constraint.HardActivityConstraint$ConstraintsStatus
+INFO: 4000: jsprit.core.problem.constraint.ServiceDeliveriesFirstConstraint: Added jsprit.core.problem.constraint.HardActivityConstraint to the set of implemented interfaces
+ERROR: 4001: jsprit.core.problem.constraint.ServiceDeliveriesFirstConstraint: Removed jsprit.core.problem.constraint.HardActivityStateLevelConstraint from the set of implemented interfaces
+ERROR: 7006: jsprit.core.problem.constraint.ServiceDeliveriesFirstConstraint: Return type of method 'public jsprit.core.problem.constraint.HardActivityStateLevelConstraint$ConstraintsStatus fulfilled(jsprit.core.problem.misc.JobInsertionContext, jsprit.core.problem.solution.route.activity.TourActivity, jsprit.core.problem.solution.route.activity.TourActivity, jsprit.core.problem.solution.route.activity.TourActivity, double)' has been changed to jsprit.core.problem.constraint.HardActivityConstraint$ConstraintsStatus
+INFO: 4000: jsprit.core.problem.constraint.ShipmentPickupsFirstConstraint: Added jsprit.core.problem.constraint.HardActivityConstraint to the set of implemented interfaces
+ERROR: 4001: jsprit.core.problem.constraint.ShipmentPickupsFirstConstraint: Removed jsprit.core.problem.constraint.HardActivityStateLevelConstraint from the set of implemented interfaces
+ERROR: 7006: jsprit.core.problem.constraint.ShipmentPickupsFirstConstraint: Return type of method 'public jsprit.core.problem.constraint.HardActivityStateLevelConstraint$ConstraintsStatus fulfilled(jsprit.core.problem.misc.JobInsertionContext, jsprit.core.problem.solution.route.activity.TourActivity, jsprit.core.problem.solution.route.activity.TourActivity, jsprit.core.problem.solution.route.activity.TourActivity, double)' has been changed to jsprit.core.problem.constraint.HardActivityConstraint$ConstraintsStatus
+INFO: 8000: jsprit.core.problem.constraint.VehicleDependentTimeWindowConstraints: Class jsprit.core.problem.constraint.VehicleDependentTimeWindowConstraints added
+INFO: 7007: jsprit.core.problem.io.VrpXMLReader: Method 'public void addJobConfigReader(jsprit.core.problem.io.VrpXMLReader$JobConfigReader)' has been deprecated
+INFO: 7007: jsprit.core.problem.io.VrpXMLReader: Method 'public void setServiceBuilderFactory(jsprit.core.problem.io.VrpXMLReader$ServiceBuilderFactory)' has been deprecated
+INFO: 7007: jsprit.core.problem.io.VrpXMLReader: Method 'public void setTourActivityFactory(jsprit.core.problem.solution.route.activity.TourActivityFactory)' has been deprecated
+INFO: 4000: jsprit.core.problem.job.Delivery: Added jsprit.core.problem.HasId to the set of implemented interfaces
+INFO: 4000: jsprit.core.problem.job.Delivery: Added jsprit.core.problem.HasIndex to the set of implemented interfaces
+INFO: 5000: jsprit.core.problem.job.Delivery: Added jsprit.core.problem.AbstractJob to the list of superclasses
+INFO: 4000: jsprit.core.problem.job.Job: Added jsprit.core.problem.HasId to the set of implemented interfaces
+INFO: 4000: jsprit.core.problem.job.Job: Added jsprit.core.problem.HasIndex to the set of implemented interfaces
+ERROR: 7012: jsprit.core.problem.job.Job: Method 'public java.lang.String getName()' has been added to an interface
+ERROR: 7012: jsprit.core.problem.job.Job: Method 'public jsprit.core.problem.Skills getRequiredSkills()' has been added to an interface
+INFO: 4000: jsprit.core.problem.job.Pickup: Added jsprit.core.problem.HasId to the set of implemented interfaces
+INFO: 4000: jsprit.core.problem.job.Pickup: Added jsprit.core.problem.HasIndex to the set of implemented interfaces
+INFO: 5000: jsprit.core.problem.job.Pickup: Added jsprit.core.problem.AbstractJob to the list of superclasses
+INFO: 4000: jsprit.core.problem.job.Service: Added jsprit.core.problem.HasId to the set of implemented interfaces
+INFO: 4000: jsprit.core.problem.job.Service: Added jsprit.core.problem.HasIndex to the set of implemented interfaces
+INFO: 5000: jsprit.core.problem.job.Service: Added jsprit.core.problem.AbstractJob to the list of superclasses
+INFO: 7011: jsprit.core.problem.job.Service: Method 'public java.lang.String getName()' has been added
+INFO: 7011: jsprit.core.problem.job.Service: Method 'public jsprit.core.problem.Skills getRequiredSkills()' has been added
+INFO: 6000: jsprit.core.problem.job.Service$Builder: Added protected field skillBuilder
+INFO: 6000: jsprit.core.problem.job.Service$Builder: Added protected field skills
+INFO: 7011: jsprit.core.problem.job.Service$Builder: Method 'public jsprit.core.problem.job.Service$Builder addRequiredSkill(java.lang.String)' has been added
+INFO: 7011: jsprit.core.problem.job.Service$Builder: Method 'public jsprit.core.problem.job.Service$Builder setName(java.lang.String)' has been added
+INFO: 4000: jsprit.core.problem.job.Shipment: Added jsprit.core.problem.HasId to the set of implemented interfaces
+INFO: 4000: jsprit.core.problem.job.Shipment: Added jsprit.core.problem.HasIndex to the set of implemented interfaces
+INFO: 5000: jsprit.core.problem.job.Shipment: Added jsprit.core.problem.AbstractJob to the list of superclasses
+INFO: 7007: jsprit.core.problem.job.Shipment: Method 'public java.lang.String getDeliveryLocation()' has been deprecated
+INFO: 7011: jsprit.core.problem.job.Shipment: Method 'public java.lang.String getDeliveryLocationId()' has been added
+INFO: 7011: jsprit.core.problem.job.Shipment: Method 'public java.lang.String getName()' has been added
+INFO: 7007: jsprit.core.problem.job.Shipment: Method 'public java.lang.String getPickupLocation()' has been deprecated
+INFO: 7011: jsprit.core.problem.job.Shipment: Method 'public java.lang.String getPickupLocationId()' has been added
+INFO: 7011: jsprit.core.problem.job.Shipment: Method 'public jsprit.core.problem.Skills getRequiredSkills()' has been added
+INFO: 7011: jsprit.core.problem.job.Shipment$Builder: Method 'public jsprit.core.problem.job.Shipment$Builder addRequiredSkill(java.lang.String)' has been added
+INFO: 7007: jsprit.core.problem.job.Shipment$Builder: Method 'public jsprit.core.problem.job.Shipment$Builder setDeliveryLocation(java.lang.String)' has been deprecated
+INFO: 7011: jsprit.core.problem.job.Shipment$Builder: Method 'public jsprit.core.problem.job.Shipment$Builder setDeliveryLocationId(java.lang.String)' has been added
+INFO: 7011: jsprit.core.problem.job.Shipment$Builder: Method 'public jsprit.core.problem.job.Shipment$Builder setName(java.lang.String)' has been added
+INFO: 7007: jsprit.core.problem.job.Shipment$Builder: Method 'public jsprit.core.problem.job.Shipment$Builder setPickupLocation(java.lang.String)' has been deprecated
+INFO: 7011: jsprit.core.problem.job.Shipment$Builder: Method 'public jsprit.core.problem.job.Shipment$Builder setPickupLocationId(java.lang.String)' has been added
+INFO: 8000: jsprit.core.problem.misc.ActivityContext: Class jsprit.core.problem.misc.ActivityContext added
+INFO: 7011: jsprit.core.problem.misc.JobInsertionContext: Method 'public java.util.List getAssociatedActivities()' has been added
+INFO: 7011: jsprit.core.problem.misc.JobInsertionContext: Method 'public jsprit.core.problem.misc.ActivityContext getRelatedActivityContext()' has been added
+INFO: 7011: jsprit.core.problem.misc.JobInsertionContext: Method 'public void setRelatedActivityContext(jsprit.core.problem.misc.ActivityContext)' has been added
+ERROR: 6001: jsprit.core.problem.solution.VehicleRoutingProblemSolution: Removed field NO_COST_YET
+INFO: 7011: jsprit.core.problem.solution.VehicleRoutingProblemSolution: Method 'public VehicleRoutingProblemSolution(java.util.Collection, java.util.Collection, double)' has been added
+INFO: 7011: jsprit.core.problem.solution.VehicleRoutingProblemSolution: Method 'public java.util.Collection getUnassignedJobs()' has been added
+INFO: 7007: jsprit.core.problem.solution.route.VehicleRoute$Builder: Method 'public jsprit.core.problem.solution.route.VehicleRoute$Builder addDelivery(jsprit.core.problem.job.Shipment, double, double)' has been deprecated
+INFO: 7007: jsprit.core.problem.solution.route.VehicleRoute$Builder: Method 'public jsprit.core.problem.solution.route.VehicleRoute$Builder addPickup(jsprit.core.problem.job.Shipment, double, double)' has been deprecated
+INFO: 7007: jsprit.core.problem.solution.route.VehicleRoute$Builder: Method 'public jsprit.core.problem.solution.route.VehicleRoute$Builder addService(jsprit.core.problem.job.Service, double, double)' has been deprecated
+INFO: 7011: jsprit.core.problem.solution.route.VehicleRoute$Builder: Method 'public jsprit.core.problem.solution.route.VehicleRoute$Builder setJobActivityFactory(jsprit.core.problem.JobActivityFactory)' has been added
+INFO: 7007: jsprit.core.problem.solution.route.VehicleRoute$Builder: Method 'public jsprit.core.problem.solution.route.VehicleRoute$Builder setRouteEndArrivalTime(double)' has been deprecated
+ERROR: 7006: jsprit.core.problem.solution.route.VehicleRoute$Builder: Return type of method 'public void setServiceActivityFactory(jsprit.core.problem.solution.route.activity.TourActivityFactory)' has been changed to jsprit.core.problem.solution.route.VehicleRoute$Builder
+ERROR: 7006: jsprit.core.problem.solution.route.VehicleRoute$Builder: Return type of method 'public void setShipmentActivityFactory(jsprit.core.problem.solution.route.activity.TourShipmentActivityFactory)' has been changed to jsprit.core.problem.solution.route.VehicleRoute$Builder
+ERROR: 7006: jsprit.core.problem.solution.route.activity.DefaultShipmentActivityFactory: Return type of method 'public jsprit.core.problem.solution.route.activity.TourActivity createDelivery(jsprit.core.problem.job.Shipment)' has been changed to jsprit.core.problem.AbstractActivity
+ERROR: 7006: jsprit.core.problem.solution.route.activity.DefaultShipmentActivityFactory: Return type of method 'public jsprit.core.problem.solution.route.activity.TourActivity createPickup(jsprit.core.problem.job.Shipment)' has been changed to jsprit.core.problem.AbstractActivity
+ERROR: 7006: jsprit.core.problem.solution.route.activity.DefaultTourActivityFactory: Return type of method 'public jsprit.core.problem.solution.route.activity.TourActivity createActivity(jsprit.core.problem.job.Service)' has been changed to jsprit.core.problem.AbstractActivity
+INFO: 4000: jsprit.core.problem.solution.route.activity.DeliverService: Added jsprit.core.problem.HasIndex to the set of implemented interfaces
+INFO: 5000: jsprit.core.problem.solution.route.activity.DeliverService: Added jsprit.core.problem.AbstractActivity to the list of superclasses
+INFO: 4000: jsprit.core.problem.solution.route.activity.DeliverShipment: Added jsprit.core.problem.HasIndex to the set of implemented interfaces
+INFO: 5000: jsprit.core.problem.solution.route.activity.DeliverShipment: Added jsprit.core.problem.AbstractActivity to the list of superclasses
+INFO: 7007: jsprit.core.problem.solution.route.activity.DeliverShipment: Method 'public DeliverShipment(jsprit.core.problem.solution.route.activity.DeliverShipment)' has been deprecated
+INFO: 4000: jsprit.core.problem.solution.route.activity.DeliveryActivity: Added jsprit.core.problem.HasIndex to the set of implemented interfaces
+INFO: 4000: jsprit.core.problem.solution.route.activity.End: Added jsprit.core.problem.HasIndex to the set of implemented interfaces
+INFO: 5000: jsprit.core.problem.solution.route.activity.End: Added jsprit.core.problem.AbstractActivity to the list of superclasses
+INFO: 4000: jsprit.core.problem.solution.route.activity.PickupActivity: Added jsprit.core.problem.HasIndex to the set of implemented interfaces
+INFO: 4000: jsprit.core.problem.solution.route.activity.PickupService: Added jsprit.core.problem.HasIndex to the set of implemented interfaces
+INFO: 5000: jsprit.core.problem.solution.route.activity.PickupService: Added jsprit.core.problem.AbstractActivity to the list of superclasses
+INFO: 4000: jsprit.core.problem.solution.route.activity.PickupShipment: Added jsprit.core.problem.HasIndex to the set of implemented interfaces
+INFO: 5000: jsprit.core.problem.solution.route.activity.PickupShipment: Added jsprit.core.problem.AbstractActivity to the list of superclasses
+INFO: 7007: jsprit.core.problem.solution.route.activity.PickupShipment: Method 'public PickupShipment(jsprit.core.problem.solution.route.activity.PickupShipment)' has been deprecated
+INFO: 4000: jsprit.core.problem.solution.route.activity.ServiceActivity: Added jsprit.core.problem.HasIndex to the set of implemented interfaces
+INFO: 5000: jsprit.core.problem.solution.route.activity.ServiceActivity: Added jsprit.core.problem.AbstractActivity to the list of superclasses
+INFO: 4000: jsprit.core.problem.solution.route.activity.Start: Added jsprit.core.problem.HasIndex to the set of implemented interfaces
+INFO: 5000: jsprit.core.problem.solution.route.activity.Start: Added jsprit.core.problem.AbstractActivity to the list of superclasses
+INFO: 4000: jsprit.core.problem.solution.route.activity.TourActivity: Added jsprit.core.problem.HasIndex to the set of implemented interfaces
+INFO: 4000: jsprit.core.problem.solution.route.activity.TourActivity$JobActivity: Added jsprit.core.problem.HasIndex to the set of implemented interfaces
+ERROR: 7006: jsprit.core.problem.solution.route.activity.TourActivityFactory: Return type of method 'public jsprit.core.problem.solution.route.activity.TourActivity createActivity(jsprit.core.problem.job.Service)' has been changed to jsprit.core.problem.AbstractActivity
+ERROR: 7006: jsprit.core.problem.solution.route.activity.TourShipmentActivityFactory: Return type of method 'public jsprit.core.problem.solution.route.activity.TourActivity createDelivery(jsprit.core.problem.job.Shipment)' has been changed to jsprit.core.problem.AbstractActivity
+ERROR: 7006: jsprit.core.problem.solution.route.activity.TourShipmentActivityFactory: Return type of method 'public jsprit.core.problem.solution.route.activity.TourActivity createPickup(jsprit.core.problem.job.Shipment)' has been changed to jsprit.core.problem.AbstractActivity
+ERROR: 7005: jsprit.core.problem.solution.route.state.RouteAndActivityStateGetter: Parameter 2 of 'public java.lang.Object getActivityState(jsprit.core.problem.solution.route.activity.TourActivity, jsprit.core.problem.solution.route.state.StateFactory$StateId, java.lang.Class)' has changed its type to jsprit.core.algorithm.state.StateId
+ERROR: 7012: jsprit.core.problem.solution.route.state.RouteAndActivityStateGetter: Method 'public java.lang.Object getActivityState(jsprit.core.problem.solution.route.activity.TourActivity, jsprit.core.problem.vehicle.Vehicle, jsprit.core.algorithm.state.StateId, java.lang.Class)' has been added to an interface
+ERROR: 7005: jsprit.core.problem.solution.route.state.RouteAndActivityStateGetter: Parameter 2 of 'public java.lang.Object getRouteState(jsprit.core.problem.solution.route.VehicleRoute, jsprit.core.problem.solution.route.state.StateFactory$StateId, java.lang.Class)' has changed its type to jsprit.core.algorithm.state.StateId
+ERROR: 7012: jsprit.core.problem.solution.route.state.RouteAndActivityStateGetter: Method 'public java.lang.Object getRouteState(jsprit.core.problem.solution.route.VehicleRoute, jsprit.core.problem.vehicle.Vehicle, jsprit.core.algorithm.state.StateId, java.lang.Class)' has been added to an interface
+ERROR: 8001: jsprit.core.problem.solution.route.state.StateFactory: Class jsprit.core.problem.solution.route.state.StateFactory removed
+ERROR: 8001: jsprit.core.problem.solution.route.state.StateFactory$State: Class jsprit.core.problem.solution.route.state.StateFactory$State removed
+ERROR: 8001: jsprit.core.problem.solution.route.state.StateFactory$StateId: Class jsprit.core.problem.solution.route.state.StateFactory$StateId removed
+ERROR: 8001: jsprit.core.problem.solution.route.state.StateFactory$States: Class jsprit.core.problem.solution.route.state.StateFactory$States removed
+INFO: 4000: jsprit.core.problem.vehicle.Vehicle: Added jsprit.core.problem.HasId to the set of implemented interfaces
+INFO: 4000: jsprit.core.problem.vehicle.Vehicle: Added jsprit.core.problem.HasIndex to the set of implemented interfaces
+ERROR: 7012: jsprit.core.problem.vehicle.Vehicle: Method 'public jsprit.core.problem.Skills getSkills()' has been added to an interface
+ERROR: 7012: jsprit.core.problem.vehicle.Vehicle: Method 'public jsprit.core.problem.vehicle.VehicleTypeKey getVehicleTypeIdentifier()' has been added to an interface
+INFO: 4000: jsprit.core.problem.vehicle.VehicleImpl: Added jsprit.core.problem.HasId to the set of implemented interfaces
+INFO: 4000: jsprit.core.problem.vehicle.VehicleImpl: Added jsprit.core.problem.HasIndex to the set of implemented interfaces
+INFO: 5000: jsprit.core.problem.vehicle.VehicleImpl: Added jsprit.core.problem.AbstractVehicle to the list of superclasses
+INFO: 7011: jsprit.core.problem.vehicle.VehicleImpl: Method 'public boolean equals(java.lang.Object)' has been added
+INFO: 7011: jsprit.core.problem.vehicle.VehicleImpl: Method 'public jsprit.core.problem.Skills getSkills()' has been added
+INFO: 7011: jsprit.core.problem.vehicle.VehicleImpl: Method 'public int hashCode()' has been added
+INFO: 7011: jsprit.core.problem.vehicle.VehicleImpl$Builder: Method 'public jsprit.core.problem.vehicle.VehicleImpl$Builder addSkill(java.lang.String)' has been added
+INFO: 7011: jsprit.core.problem.vehicle.VehicleImpl$Builder: Method 'public jsprit.core.problem.vehicle.VehicleImpl$Builder addSkills(jsprit.core.problem.Skills)' has been added
+INFO: 4000: jsprit.core.problem.vehicle.VehicleImpl$NoVehicle: Added jsprit.core.problem.HasId to the set of implemented interfaces
+INFO: 4000: jsprit.core.problem.vehicle.VehicleImpl$NoVehicle: Added jsprit.core.problem.HasIndex to the set of implemented interfaces
+INFO: 5000: jsprit.core.problem.vehicle.VehicleImpl$NoVehicle: Added jsprit.core.problem.AbstractVehicle to the list of superclasses
+INFO: 4000: jsprit.core.problem.vehicle.VehicleTypeKey: Added jsprit.core.problem.HasIndex to the set of implemented interfaces
+INFO: 5000: jsprit.core.problem.vehicle.VehicleTypeKey: Added jsprit.core.problem.AbstractVehicle$AbstractTypeKey to the list of superclasses
+INFO: 6000: jsprit.core.problem.vehicle.VehicleTypeKey: Added public field skills
+ERROR: 7004: jsprit.core.problem.vehicle.VehicleTypeKey: In method 'public VehicleTypeKey(java.lang.String, java.lang.String, java.lang.String, double, double)' the number of arguments has changed
+INFO: 7011: jsprit.core.util.Time: Method 'public java.lang.String parseSecondsToTime(double)' has been added
