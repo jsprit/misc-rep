@@ -1,0 +1,34 @@
+INFO: 8000: jsprit.core.algorithm.PrettyAlgorithmBuilder: Class jsprit.core.algorithm.PrettyAlgorithmBuilder added
+ERROR: 7004: jsprit.core.algorithm.SearchStrategy: In method 'public SearchStrategy(jsprit.core.algorithm.selector.SolutionSelector, jsprit.core.algorithm.acceptor.SolutionAcceptor, jsprit.core.problem.solution.SolutionCostCalculator)' the number of arguments has changed
+INFO: 7011: jsprit.core.algorithm.SearchStrategy: Method 'public java.lang.String getId()' has been added
+INFO: 7011: jsprit.core.algorithm.SearchStrategyManager: Method 'public void informStrategyWeightChanged(java.lang.String, double)' has been added
+INFO: 8000: jsprit.core.algorithm.recreate.AbstractInsertionStrategy: Class jsprit.core.algorithm.recreate.AbstractInsertionStrategy added
+INFO: 8000: jsprit.core.algorithm.recreate.AbstractInsertionStrategy$Insertion: Class jsprit.core.algorithm.recreate.AbstractInsertionStrategy$Insertion added
+INFO: 1000: jsprit.core.algorithm.recreate.BestInsertion: Increased visibility of class from package to public
+INFO: 8000: jsprit.core.algorithm.recreate.CalculatesServiceInsertionWithTimeScheduling$KnowledgeInjection: Class jsprit.core.algorithm.recreate.CalculatesServiceInsertionWithTimeScheduling$KnowledgeInjection added
+INFO: 8000: jsprit.core.algorithm.recreate.InsertionBuilder: Class jsprit.core.algorithm.recreate.InsertionBuilder added
+INFO: 8000: jsprit.core.algorithm.recreate.InsertionBuilder$Strategy: Class jsprit.core.algorithm.recreate.InsertionBuilder$Strategy added
+INFO: 1000: jsprit.core.algorithm.recreate.InsertionData$NoInsertionFound: Increased visibility of class from package to public
+INFO: 8000: jsprit.core.algorithm.recreate.JobInsertionCostsCalculatorBuilder: Class jsprit.core.algorithm.recreate.JobInsertionCostsCalculatorBuilder added
+INFO: 8000: jsprit.core.algorithm.recreate.JobInsertionCostsCalculatorLight: Class jsprit.core.algorithm.recreate.JobInsertionCostsCalculatorLight added
+INFO: 8000: jsprit.core.algorithm.recreate.JobInsertionCostsCalculatorLightFactory: Class jsprit.core.algorithm.recreate.JobInsertionCostsCalculatorLightFactory added
+INFO: 8000: jsprit.core.algorithm.recreate.RegretInsertion: Class jsprit.core.algorithm.recreate.RegretInsertion added
+INFO: 8000: jsprit.core.algorithm.recreate.RegretInsertion$DefaultScorer: Class jsprit.core.algorithm.recreate.RegretInsertion$DefaultScorer added
+INFO: 8000: jsprit.core.algorithm.recreate.RegretInsertionConcurrent: Class jsprit.core.algorithm.recreate.RegretInsertionConcurrent added
+INFO: 1000: jsprit.core.algorithm.recreate.listener.BeforeJobInsertionListener: Increased visibility of class from package to public
+INFO: 8000: jsprit.core.algorithm.ruin.AbstractRuinStrategy: Class jsprit.core.algorithm.ruin.AbstractRuinStrategy added
+INFO: 7007: jsprit.core.algorithm.ruin.RuinStrategy: Method 'public java.util.Collection ruin(java.util.Collection, jsprit.core.problem.job.Job, int)' has been deprecated
+INFO: 7011: jsprit.core.algorithm.state.StateManager: Method 'public void addAllStateUpdater(java.util.Collection)' has been added
+INFO: 7011: jsprit.core.algorithm.state.StateManager: Method 'public void addCoreUpdater()' has been added
+INFO: 7011: jsprit.core.analysis.SolutionAnalyser: Method 'public java.lang.Double getLastTransportCostAtActivity(jsprit.core.problem.solution.route.activity.TourActivity, jsprit.core.problem.solution.route.VehicleRoute)' has been added
+INFO: 7011: jsprit.core.analysis.SolutionAnalyser: Method 'public java.lang.Double getLastTransportDistanceAtActivity(jsprit.core.problem.solution.route.activity.TourActivity, jsprit.core.problem.solution.route.VehicleRoute)' has been added
+INFO: 7011: jsprit.core.analysis.SolutionAnalyser: Method 'public java.lang.Double getLastTransportTimeAtActivity(jsprit.core.problem.solution.route.activity.TourActivity, jsprit.core.problem.solution.route.VehicleRoute)' has been added
+INFO: 7011: jsprit.core.analysis.SolutionAnalyser: Method 'public java.lang.Double getTransportTimeAtActivity(jsprit.core.problem.solution.route.activity.TourActivity, jsprit.core.problem.solution.route.VehicleRoute)' has been added
+INFO: 7011: jsprit.core.problem.Skills: Method 'public java.lang.String toString()' has been added
+ERROR: 7002: jsprit.core.problem.VehicleRoutingProblem$Builder: Method 'public jsprit.core.problem.VehicleRoutingProblem$Builder addPenaltyVehicles(double)' has been removed
+ERROR: 7002: jsprit.core.problem.VehicleRoutingProblem$Builder: Method 'public jsprit.core.problem.VehicleRoutingProblem$Builder addPenaltyVehicles(double, double)' has been removed
+ERROR: 7002: jsprit.core.problem.VehicleRoutingProblem$Builder: Method 'public java.lang.String createLocation(double, double)' has been removed
+INFO: 8000: jsprit.core.util.DistanceUnit: Class jsprit.core.util.DistanceUnit added
+INFO: 8000: jsprit.core.util.GreatCircleCosts: Class jsprit.core.util.GreatCircleCosts added
+INFO: 8000: jsprit.core.util.GreatCircleDistanceCalculator: Class jsprit.core.util.GreatCircleDistanceCalculator added
+INFO: 8000: jsprit.core.util.TimeUnit: Class jsprit.core.util.TimeUnit added
