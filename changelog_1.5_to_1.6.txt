@@ -1,0 +1,155 @@
+INFO: 7011: jsprit.core.algorithm.SearchStrategy$DiscoveredSolution: Method 'public java.lang.String getStrategyId()' has been added
+INFO: 7007: jsprit.core.algorithm.SearchStrategy$DiscoveredSolution: Method 'public java.lang.String getStrategyName()' has been deprecated
+INFO: 7007: jsprit.core.algorithm.SearchStrategyManager: Method 'public java.util.List getProbabilities()' has been deprecated
+INFO: 7011: jsprit.core.algorithm.SearchStrategyManager: Method 'public double getWeight(java.lang.String)' has been added
+INFO: 7011: jsprit.core.algorithm.SearchStrategyManager: Method 'public java.util.List getWeights()' has been added
+ERROR: 7005: jsprit.core.algorithm.listener.StrategySelectedListener: Parameter 1 of 'public void informSelectedStrategy(java.lang.String, jsprit.core.problem.VehicleRoutingProblem, java.util.Collection)' has changed its type to jsprit.core.algorithm.SearchStrategy$DiscoveredSolution
+ERROR: 7005: jsprit.core.algorithm.listener.VehicleRoutingAlgorithmListeners: Parameter 1 of 'public void selectedStrategy(java.lang.String, jsprit.core.problem.VehicleRoutingProblem, java.util.Collection)' has changed its type to jsprit.core.algorithm.SearchStrategy$DiscoveredSolution
+INFO: 7011: jsprit.core.algorithm.module.RuinAndRecreateModule: Method 'public jsprit.core.algorithm.recreate.InsertionStrategy getInsertion()' has been added
+INFO: 7011: jsprit.core.algorithm.module.RuinAndRecreateModule: Method 'public jsprit.core.algorithm.ruin.RuinStrategy getRuin()' has been added
+INFO: 1000: jsprit.core.algorithm.recreate.BestInsertionConcurrent: Increased visibility of class from package to public
+ERROR: 7006: jsprit.core.algorithm.recreate.InsertionBuilder: Return type of method 'public void setAllowVehicleSwitch(boolean)' has been changed to jsprit.core.algorithm.recreate.InsertionBuilder
+INFO: 6000: jsprit.core.algorithm.ruin.AbstractRuinStrategy: Added protected field ruinShareFactory
+INFO: 6000: jsprit.core.algorithm.ruin.AbstractRuinStrategy: Added protected field vrp
+ERROR: 7004: jsprit.core.algorithm.ruin.AbstractRuinStrategy: In method 'protected AbstractRuinStrategy()' the number of arguments has changed
+INFO: 7011: jsprit.core.algorithm.ruin.AbstractRuinStrategy: Method 'public jsprit.core.algorithm.ruin.RuinShareFactory getRuinShareFactory()' has been added
+INFO: 7011: jsprit.core.algorithm.ruin.AbstractRuinStrategy: Method 'public void setRuinShareFactory(jsprit.core.algorithm.ruin.RuinShareFactory)' has been added
+INFO: 8000: jsprit.core.algorithm.ruin.DBSCANClusterer: Class jsprit.core.algorithm.ruin.DBSCANClusterer added
+INFO: 8000: jsprit.core.algorithm.ruin.JobNeighborhoods: Class jsprit.core.algorithm.ruin.JobNeighborhoods added
+INFO: 8000: jsprit.core.algorithm.ruin.JobNeighborhoodsFactory: Class jsprit.core.algorithm.ruin.JobNeighborhoodsFactory added
+INFO: 8000: jsprit.core.algorithm.ruin.RuinClusters: Class jsprit.core.algorithm.ruin.RuinClusters added
+INFO: 8000: jsprit.core.algorithm.ruin.RuinClusters$JobActivityWrapper: Class jsprit.core.algorithm.ruin.RuinClusters$JobActivityWrapper added
+INFO: 1000: jsprit.core.algorithm.ruin.RuinRadial: Increased visibility of class from package to public
+INFO: 8000: jsprit.core.algorithm.ruin.RuinRadialMultipleCenters: Class jsprit.core.algorithm.ruin.RuinRadialMultipleCenters added
+INFO: 1000: jsprit.core.algorithm.ruin.RuinRandom: Increased visibility of class from package to public
+INFO: 8000: jsprit.core.algorithm.ruin.RuinShareFactory: Class jsprit.core.algorithm.ruin.RuinShareFactory added
+INFO: 8000: jsprit.core.algorithm.ruin.RuinWorst: Class jsprit.core.algorithm.ruin.RuinWorst added
+ERROR: 7005: jsprit.core.algorithm.termination.TimeTermination: Parameter 1 of 'public TimeTermination(double)' has changed its type to long
+INFO: 7011: jsprit.core.algorithm.termination.TimeTermination: Method 'public void setTimeGetter(jsprit.core.algorithm.termination.TimeTermination$TimeGetter)' has been added
+INFO: 8000: jsprit.core.algorithm.termination.TimeTermination$TimeGetter: Class jsprit.core.algorithm.termination.TimeTermination$TimeGetter added
+INFO: 7007: jsprit.core.analysis.SolutionAnalyser: Method 'public SolutionAnalyser(jsprit.core.problem.VehicleRoutingProblem, jsprit.core.problem.solution.VehicleRoutingProblemSolution, jsprit.core.analysis.SolutionAnalyser$DistanceCalculator)' has been deprecated
+INFO: 7011: jsprit.core.analysis.SolutionAnalyser: Method 'public SolutionAnalyser(jsprit.core.problem.VehicleRoutingProblem, jsprit.core.problem.solution.VehicleRoutingProblemSolution, jsprit.core.problem.cost.TransportDistance)' has been added
+ERROR: 7005: jsprit.core.analysis.SolutionAnalyser$DistanceCalculator: Parameter 1 of 'public double getDistance(java.lang.String, java.lang.String)' has changed its type to jsprit.core.problem.Location
+ERROR: 7005: jsprit.core.analysis.SolutionAnalyser$DistanceCalculator: Parameter 2 of 'public double getDistance(java.lang.String, java.lang.String)' has changed its type to jsprit.core.problem.Location
+INFO: 7011: jsprit.core.problem.Capacity: Method 'public jsprit.core.problem.Capacity min(jsprit.core.problem.Capacity, jsprit.core.problem.Capacity)' has been added
+INFO: 8000: jsprit.core.problem.Location: Class jsprit.core.problem.Location added
+INFO: 8000: jsprit.core.problem.Location$Builder: Class jsprit.core.problem.Location$Builder added
+ERROR: 7005: jsprit.core.problem.cost.AbstractForwardVehicleRoutingTransportCosts: Parameter 1 of 'public double getBackwardTransportCost(java.lang.String, java.lang.String, double, jsprit.core.problem.driver.Driver, jsprit.core.problem.vehicle.Vehicle)' has changed its type to jsprit.core.problem.Location
+ERROR: 7005: jsprit.core.problem.cost.AbstractForwardVehicleRoutingTransportCosts: Parameter 2 of 'public double getBackwardTransportCost(java.lang.String, java.lang.String, double, jsprit.core.problem.driver.Driver, jsprit.core.problem.vehicle.Vehicle)' has changed its type to jsprit.core.problem.Location
+ERROR: 7005: jsprit.core.problem.cost.AbstractForwardVehicleRoutingTransportCosts: Parameter 1 of 'public double getBackwardTransportTime(java.lang.String, java.lang.String, double, jsprit.core.problem.driver.Driver, jsprit.core.problem.vehicle.Vehicle)' has changed its type to jsprit.core.problem.Location
+ERROR: 7005: jsprit.core.problem.cost.AbstractForwardVehicleRoutingTransportCosts: Parameter 2 of 'public double getBackwardTransportTime(java.lang.String, java.lang.String, double, jsprit.core.problem.driver.Driver, jsprit.core.problem.vehicle.Vehicle)' has changed its type to jsprit.core.problem.Location
+ERROR: 7005: jsprit.core.problem.cost.AbstractForwardVehicleRoutingTransportCosts: Parameter 1 of 'public double getTransportCost(java.lang.String, java.lang.String, double, jsprit.core.problem.driver.Driver, jsprit.core.problem.vehicle.Vehicle)' has changed its type to jsprit.core.problem.Location
+ERROR: 7005: jsprit.core.problem.cost.AbstractForwardVehicleRoutingTransportCosts: Parameter 2 of 'public double getTransportCost(java.lang.String, java.lang.String, double, jsprit.core.problem.driver.Driver, jsprit.core.problem.vehicle.Vehicle)' has changed its type to jsprit.core.problem.Location
+ERROR: 7005: jsprit.core.problem.cost.AbstractForwardVehicleRoutingTransportCosts: Parameter 1 of 'public double getTransportTime(java.lang.String, java.lang.String, double, jsprit.core.problem.driver.Driver, jsprit.core.problem.vehicle.Vehicle)' has changed its type to jsprit.core.problem.Location
+ERROR: 7005: jsprit.core.problem.cost.AbstractForwardVehicleRoutingTransportCosts: Parameter 2 of 'public double getTransportTime(java.lang.String, java.lang.String, double, jsprit.core.problem.driver.Driver, jsprit.core.problem.vehicle.Vehicle)' has changed its type to jsprit.core.problem.Location
+ERROR: 7005: jsprit.core.problem.cost.BackwardTransportCost: Parameter 1 of 'public double getBackwardTransportCost(java.lang.String, java.lang.String, double, jsprit.core.problem.driver.Driver, jsprit.core.problem.vehicle.Vehicle)' has changed its type to jsprit.core.problem.Location
+ERROR: 7005: jsprit.core.problem.cost.BackwardTransportCost: Parameter 2 of 'public double getBackwardTransportCost(java.lang.String, java.lang.String, double, jsprit.core.problem.driver.Driver, jsprit.core.problem.vehicle.Vehicle)' has changed its type to jsprit.core.problem.Location
+ERROR: 7005: jsprit.core.problem.cost.BackwardTransportTime: Parameter 1 of 'public double getBackwardTransportTime(java.lang.String, java.lang.String, double, jsprit.core.problem.driver.Driver, jsprit.core.problem.vehicle.Vehicle)' has changed its type to jsprit.core.problem.Location
+ERROR: 7005: jsprit.core.problem.cost.BackwardTransportTime: Parameter 2 of 'public double getBackwardTransportTime(java.lang.String, java.lang.String, double, jsprit.core.problem.driver.Driver, jsprit.core.problem.vehicle.Vehicle)' has changed its type to jsprit.core.problem.Location
+ERROR: 7005: jsprit.core.problem.cost.ForwardTransportCost: Parameter 1 of 'public double getTransportCost(java.lang.String, java.lang.String, double, jsprit.core.problem.driver.Driver, jsprit.core.problem.vehicle.Vehicle)' has changed its type to jsprit.core.problem.Location
+ERROR: 7005: jsprit.core.problem.cost.ForwardTransportCost: Parameter 2 of 'public double getTransportCost(java.lang.String, java.lang.String, double, jsprit.core.problem.driver.Driver, jsprit.core.problem.vehicle.Vehicle)' has changed its type to jsprit.core.problem.Location
+ERROR: 7005: jsprit.core.problem.cost.ForwardTransportTime: Parameter 1 of 'public double getTransportTime(java.lang.String, java.lang.String, double, jsprit.core.problem.driver.Driver, jsprit.core.problem.vehicle.Vehicle)' has changed its type to jsprit.core.problem.Location
+ERROR: 7005: jsprit.core.problem.cost.ForwardTransportTime: Parameter 2 of 'public double getTransportTime(java.lang.String, java.lang.String, double, jsprit.core.problem.driver.Driver, jsprit.core.problem.vehicle.Vehicle)' has changed its type to jsprit.core.problem.Location
+INFO: 8000: jsprit.core.problem.cost.TransportDistance: Class jsprit.core.problem.cost.TransportDistance added
+INFO: 7007: jsprit.core.problem.job.Service: Method 'public jsprit.core.util.Coordinate getCoord()' has been deprecated
+INFO: 7011: jsprit.core.problem.job.Service: Method 'public jsprit.core.problem.Location getLocation()' has been added
+INFO: 7007: jsprit.core.problem.job.Service: Method 'public java.lang.String getLocationId()' has been deprecated
+INFO: 6000: jsprit.core.problem.job.Service$Builder: Added protected field location
+INFO: 7007: jsprit.core.problem.job.Service$Builder: Method 'public jsprit.core.problem.job.Service$Builder setCoord(jsprit.core.util.Coordinate)' has been deprecated
+INFO: 7011: jsprit.core.problem.job.Service$Builder: Method 'public jsprit.core.problem.job.Service$Builder setLocation(jsprit.core.problem.Location)' has been added
+INFO: 7007: jsprit.core.problem.job.Service$Builder: Method 'public jsprit.core.problem.job.Service$Builder setLocationId(java.lang.String)' has been deprecated
+INFO: 7007: jsprit.core.problem.job.Shipment: Method 'public jsprit.core.util.Coordinate getDeliveryCoord()' has been deprecated
+ERROR: 7006: jsprit.core.problem.job.Shipment: Return type of method 'public java.lang.String getDeliveryLocation()' has been changed to jsprit.core.problem.Location
+INFO: 7008: jsprit.core.problem.job.Shipment: Method 'public java.lang.String getDeliveryLocation()' is no longer deprecated
+INFO: 7007: jsprit.core.problem.job.Shipment: Method 'public java.lang.String getDeliveryLocationId()' has been deprecated
+INFO: 7007: jsprit.core.problem.job.Shipment: Method 'public jsprit.core.util.Coordinate getPickupCoord()' has been deprecated
+ERROR: 7006: jsprit.core.problem.job.Shipment: Return type of method 'public java.lang.String getPickupLocation()' has been changed to jsprit.core.problem.Location
+INFO: 7008: jsprit.core.problem.job.Shipment: Method 'public java.lang.String getPickupLocation()' is no longer deprecated
+INFO: 7007: jsprit.core.problem.job.Shipment: Method 'public java.lang.String getPickupLocationId()' has been deprecated
+INFO: 7007: jsprit.core.problem.job.Shipment$Builder: Method 'public jsprit.core.problem.job.Shipment$Builder setDeliveryCoord(jsprit.core.util.Coordinate)' has been deprecated
+INFO: 7011: jsprit.core.problem.job.Shipment$Builder: Method 'public jsprit.core.problem.job.Shipment$Builder setDeliveryLocation(jsprit.core.problem.Location)' has been added
+INFO: 7007: jsprit.core.problem.job.Shipment$Builder: Method 'public jsprit.core.problem.job.Shipment$Builder setDeliveryLocationId(java.lang.String)' has been deprecated
+INFO: 7007: jsprit.core.problem.job.Shipment$Builder: Method 'public jsprit.core.problem.job.Shipment$Builder setPickupCoord(jsprit.core.util.Coordinate)' has been deprecated
+INFO: 7011: jsprit.core.problem.job.Shipment$Builder: Method 'public jsprit.core.problem.job.Shipment$Builder setPickupLocation(jsprit.core.problem.Location)' has been added
+INFO: 7007: jsprit.core.problem.job.Shipment$Builder: Method 'public jsprit.core.problem.job.Shipment$Builder setPickupLocationId(java.lang.String)' has been deprecated
+INFO: 7011: jsprit.core.problem.solution.route.activity.DeliverService: Method 'public jsprit.core.problem.Location getLocation()' has been added
+INFO: 7011: jsprit.core.problem.solution.route.activity.DeliverShipment: Method 'public jsprit.core.problem.Location getLocation()' has been added
+INFO: 7011: jsprit.core.problem.solution.route.activity.End: Method 'public End(jsprit.core.problem.Location, double, double)' has been added
+INFO: 7011: jsprit.core.problem.solution.route.activity.End: Method 'public jsprit.core.problem.Location getLocation()' has been added
+INFO: 7007: jsprit.core.problem.solution.route.activity.End: Method 'public java.lang.String getLocationId()' has been deprecated
+INFO: 7011: jsprit.core.problem.solution.route.activity.End: Method 'public void setLocation(jsprit.core.problem.Location)' has been added
+INFO: 7007: jsprit.core.problem.solution.route.activity.End: Method 'public void setLocationId(java.lang.String)' has been deprecated
+INFO: 7011: jsprit.core.problem.solution.route.activity.PickupService: Method 'public jsprit.core.problem.Location getLocation()' has been added
+INFO: 7011: jsprit.core.problem.solution.route.activity.PickupShipment: Method 'public jsprit.core.problem.Location getLocation()' has been added
+INFO: 7011: jsprit.core.problem.solution.route.activity.ServiceActivity: Method 'public jsprit.core.problem.Location getLocation()' has been added
+INFO: 7007: jsprit.core.problem.solution.route.activity.Start: Method 'public Start(java.lang.String, double, double)' has been deprecated
+INFO: 7011: jsprit.core.problem.solution.route.activity.Start: Method 'public Start(jsprit.core.problem.Location, double, double)' has been added
+INFO: 7011: jsprit.core.problem.solution.route.activity.Start: Method 'public jsprit.core.problem.Location getLocation()' has been added
+INFO: 7007: jsprit.core.problem.solution.route.activity.Start: Method 'public java.lang.String getLocationId()' has been deprecated
+INFO: 7011: jsprit.core.problem.solution.route.activity.Start: Method 'public void setLocation(jsprit.core.problem.Location)' has been added
+INFO: 7007: jsprit.core.problem.solution.route.activity.Start: Method 'public void setLocationId(java.lang.String)' has been deprecated
+ERROR: 7012: jsprit.core.problem.solution.route.activity.TourActivity: Method 'public jsprit.core.problem.Location getLocation()' has been added to an interface
+INFO: 7007: jsprit.core.problem.solution.route.activity.TourActivity: Method 'public java.lang.String getLocationId()' has been deprecated
+ERROR: 8001: jsprit.core.problem.vehicle.PenaltyVehicleType: Class jsprit.core.problem.vehicle.PenaltyVehicleType removed
+ERROR: 7012: jsprit.core.problem.vehicle.Vehicle: Method 'public jsprit.core.problem.Location getEndLocation()' has been added to an interface
+INFO: 7007: jsprit.core.problem.vehicle.Vehicle: Method 'public jsprit.core.util.Coordinate getEndLocationCoordinate()' has been deprecated
+INFO: 7007: jsprit.core.problem.vehicle.Vehicle: Method 'public java.lang.String getEndLocationId()' has been deprecated
+ERROR: 7012: jsprit.core.problem.vehicle.Vehicle: Method 'public jsprit.core.problem.Location getStartLocation()' has been added to an interface
+INFO: 7007: jsprit.core.problem.vehicle.Vehicle: Method 'public jsprit.core.util.Coordinate getStartLocationCoordinate()' has been deprecated
+INFO: 7007: jsprit.core.problem.vehicle.Vehicle: Method 'public java.lang.String getStartLocationId()' has been deprecated
+ERROR: 8001: jsprit.core.problem.vehicle.VehicleFleetManagerImpl$DefaultFleetManager: Class jsprit.core.problem.vehicle.VehicleFleetManagerImpl$DefaultFleetManager removed
+INFO: 7011: jsprit.core.problem.vehicle.VehicleImpl: Method 'public jsprit.core.problem.Location getEndLocation()' has been added
+INFO: 7011: jsprit.core.problem.vehicle.VehicleImpl: Method 'public jsprit.core.problem.Location getStartLocation()' has been added
+INFO: 7011: jsprit.core.problem.vehicle.VehicleImpl$Builder: Method 'public jsprit.core.problem.vehicle.VehicleImpl$Builder setEndLocation(jsprit.core.problem.Location)' has been added
+INFO: 7007: jsprit.core.problem.vehicle.VehicleImpl$Builder: Method 'public jsprit.core.problem.vehicle.VehicleImpl$Builder setEndLocationCoordinate(jsprit.core.util.Coordinate)' has been deprecated
+INFO: 7007: jsprit.core.problem.vehicle.VehicleImpl$Builder: Method 'public jsprit.core.problem.vehicle.VehicleImpl$Builder setEndLocationId(java.lang.String)' has been deprecated
+INFO: 7011: jsprit.core.problem.vehicle.VehicleImpl$Builder: Method 'public jsprit.core.problem.vehicle.VehicleImpl$Builder setStartLocation(jsprit.core.problem.Location)' has been added
+INFO: 7007: jsprit.core.problem.vehicle.VehicleImpl$Builder: Method 'public jsprit.core.problem.vehicle.VehicleImpl$Builder setStartLocationCoordinate(jsprit.core.util.Coordinate)' has been deprecated
+INFO: 7007: jsprit.core.problem.vehicle.VehicleImpl$Builder: Method 'public jsprit.core.problem.vehicle.VehicleImpl$Builder setStartLocationId(java.lang.String)' has been deprecated
+ERROR: 5001: jsprit.core.problem.vehicle.VehicleImpl$NoVehicle: Removed jsprit.core.problem.vehicle.VehicleImpl from the list of superclasses
+INFO: 7011: jsprit.core.problem.vehicle.VehicleImpl$NoVehicle: Method 'public double getEarliestDeparture()' has been added
+INFO: 7011: jsprit.core.problem.vehicle.VehicleImpl$NoVehicle: Method 'public jsprit.core.problem.Location getEndLocation()' has been added
+INFO: 7011: jsprit.core.problem.vehicle.VehicleImpl$NoVehicle: Method 'public jsprit.core.util.Coordinate getEndLocationCoordinate()' has been added
+INFO: 7011: jsprit.core.problem.vehicle.VehicleImpl$NoVehicle: Method 'public java.lang.String getEndLocationId()' has been added
+INFO: 7011: jsprit.core.problem.vehicle.VehicleImpl$NoVehicle: Method 'public java.lang.String getId()' has been added
+INFO: 7011: jsprit.core.problem.vehicle.VehicleImpl$NoVehicle: Method 'public double getLatestArrival()' has been added
+INFO: 7011: jsprit.core.problem.vehicle.VehicleImpl$NoVehicle: Method 'public jsprit.core.problem.Skills getSkills()' has been added
+INFO: 7011: jsprit.core.problem.vehicle.VehicleImpl$NoVehicle: Method 'public jsprit.core.problem.Location getStartLocation()' has been added
+INFO: 7011: jsprit.core.problem.vehicle.VehicleImpl$NoVehicle: Method 'public jsprit.core.util.Coordinate getStartLocationCoordinate()' has been added
+INFO: 7011: jsprit.core.problem.vehicle.VehicleImpl$NoVehicle: Method 'public java.lang.String getStartLocationId()' has been added
+INFO: 7011: jsprit.core.problem.vehicle.VehicleImpl$NoVehicle: Method 'public jsprit.core.problem.vehicle.VehicleType getType()' has been added
+INFO: 7011: jsprit.core.problem.vehicle.VehicleImpl$NoVehicle: Method 'public boolean isReturnToDepot()' has been added
+INFO: 7011: jsprit.core.util.ArrayUtils: Method 'public double[] toPrimitiveArray(java.util.Collection)' has been added
+INFO: 4000: jsprit.core.util.CrowFlyCosts: Added jsprit.core.problem.cost.TransportDistance to the set of implemented interfaces
+INFO: 7011: jsprit.core.util.CrowFlyCosts: Method 'public double getDistance(jsprit.core.problem.Location, jsprit.core.problem.Location)' has been added
+ERROR: 7005: jsprit.core.util.CrowFlyCosts: Parameter 1 of 'public double getTransportCost(java.lang.String, java.lang.String, double, jsprit.core.problem.driver.Driver, jsprit.core.problem.vehicle.Vehicle)' has changed its type to jsprit.core.problem.Location
+ERROR: 7005: jsprit.core.util.CrowFlyCosts: Parameter 2 of 'public double getTransportCost(java.lang.String, java.lang.String, double, jsprit.core.problem.driver.Driver, jsprit.core.problem.vehicle.Vehicle)' has changed its type to jsprit.core.problem.Location
+ERROR: 7005: jsprit.core.util.CrowFlyCosts: Parameter 1 of 'public double getTransportTime(java.lang.String, java.lang.String, double, jsprit.core.problem.driver.Driver, jsprit.core.problem.vehicle.Vehicle)' has changed its type to jsprit.core.problem.Location
+ERROR: 7005: jsprit.core.util.CrowFlyCosts: Parameter 2 of 'public double getTransportTime(java.lang.String, java.lang.String, double, jsprit.core.problem.driver.Driver, jsprit.core.problem.vehicle.Vehicle)' has changed its type to jsprit.core.problem.Location
+INFO: 8000: jsprit.core.util.EuclideanCosts: Class jsprit.core.util.EuclideanCosts added
+INFO: 8000: jsprit.core.util.FastVehicleRoutingTransportCostsMatrix: Class jsprit.core.util.FastVehicleRoutingTransportCostsMatrix added
+INFO: 8000: jsprit.core.util.FastVehicleRoutingTransportCostsMatrix$Builder: Class jsprit.core.util.FastVehicleRoutingTransportCostsMatrix$Builder added
+INFO: 4000: jsprit.core.util.GreatCircleCosts: Added jsprit.core.problem.cost.TransportDistance to the set of implemented interfaces
+INFO: 7007: jsprit.core.util.GreatCircleCosts: Method 'public GreatCircleCosts(jsprit.core.util.Locations)' has been deprecated
+INFO: 7007: jsprit.core.util.GreatCircleCosts: Method 'public GreatCircleCosts(jsprit.core.util.Locations, jsprit.core.util.DistanceUnit)' has been deprecated
+INFO: 7011: jsprit.core.util.GreatCircleCosts: Method 'public GreatCircleCosts()' has been added
+INFO: 7011: jsprit.core.util.GreatCircleCosts: Method 'public GreatCircleCosts(jsprit.core.util.DistanceUnit)' has been added
+INFO: 7007: jsprit.core.util.GreatCircleCosts: Method 'public double getDistance(java.lang.String, java.lang.String)' has been deprecated
+INFO: 7011: jsprit.core.util.GreatCircleCosts: Method 'public double getDistance(jsprit.core.problem.Location, jsprit.core.problem.Location)' has been added
+ERROR: 7005: jsprit.core.util.GreatCircleCosts: Parameter 1 of 'public double getTransportCost(java.lang.String, java.lang.String, double, jsprit.core.problem.driver.Driver, jsprit.core.problem.vehicle.Vehicle)' has changed its type to jsprit.core.problem.Location
+ERROR: 7005: jsprit.core.util.GreatCircleCosts: Parameter 2 of 'public double getTransportCost(java.lang.String, java.lang.String, double, jsprit.core.problem.driver.Driver, jsprit.core.problem.vehicle.Vehicle)' has changed its type to jsprit.core.problem.Location
+ERROR: 7005: jsprit.core.util.GreatCircleCosts: Parameter 1 of 'public double getTransportTime(java.lang.String, java.lang.String, double, jsprit.core.problem.driver.Driver, jsprit.core.problem.vehicle.Vehicle)' has changed its type to jsprit.core.problem.Location
+ERROR: 7005: jsprit.core.util.GreatCircleCosts: Parameter 2 of 'public double getTransportTime(java.lang.String, java.lang.String, double, jsprit.core.problem.driver.Driver, jsprit.core.problem.vehicle.Vehicle)' has changed its type to jsprit.core.problem.Location
+INFO: 4000: jsprit.core.util.ManhattanCosts: Added jsprit.core.problem.cost.TransportDistance to the set of implemented interfaces
+INFO: 7011: jsprit.core.util.ManhattanCosts: Method 'public ManhattanCosts()' has been added
+INFO: 7011: jsprit.core.util.ManhattanCosts: Method 'public double getDistance(jsprit.core.problem.Location, jsprit.core.problem.Location)' has been added
+ERROR: 7005: jsprit.core.util.ManhattanCosts: Parameter 1 of 'public double getTransportCost(java.lang.String, java.lang.String, double, jsprit.core.problem.driver.Driver, jsprit.core.problem.vehicle.Vehicle)' has changed its type to jsprit.core.problem.Location
+ERROR: 7005: jsprit.core.util.ManhattanCosts: Parameter 2 of 'public double getTransportCost(java.lang.String, java.lang.String, double, jsprit.core.problem.driver.Driver, jsprit.core.problem.vehicle.Vehicle)' has changed its type to jsprit.core.problem.Location
+ERROR: 7005: jsprit.core.util.ManhattanCosts: Parameter 1 of 'public double getTransportTime(java.lang.String, java.lang.String, double, jsprit.core.problem.driver.Driver, jsprit.core.problem.vehicle.Vehicle)' has changed its type to jsprit.core.problem.Location
+ERROR: 7005: jsprit.core.util.ManhattanCosts: Parameter 2 of 'public double getTransportTime(java.lang.String, java.lang.String, double, jsprit.core.problem.driver.Driver, jsprit.core.problem.vehicle.Vehicle)' has changed its type to jsprit.core.problem.Location
+INFO: 8000: jsprit.core.util.NoiseMaker: Class jsprit.core.util.NoiseMaker added
+INFO: 8000: jsprit.core.util.RandomUtils: Class jsprit.core.util.RandomUtils added
+ERROR: 7005: jsprit.core.util.VehicleRoutingTransportCostsMatrix: Parameter 1 of 'public double getTransportCost(java.lang.String, java.lang.String, double, jsprit.core.problem.driver.Driver, jsprit.core.problem.vehicle.Vehicle)' has changed its type to jsprit.core.problem.Location
+ERROR: 7005: jsprit.core.util.VehicleRoutingTransportCostsMatrix: Parameter 2 of 'public double getTransportCost(java.lang.String, java.lang.String, double, jsprit.core.problem.driver.Driver, jsprit.core.problem.vehicle.Vehicle)' has changed its type to jsprit.core.problem.Location
+ERROR: 7005: jsprit.core.util.VehicleRoutingTransportCostsMatrix: Parameter 1 of 'public double getTransportTime(java.lang.String, java.lang.String, double, jsprit.core.problem.driver.Driver, jsprit.core.problem.vehicle.Vehicle)' has changed its type to jsprit.core.problem.Location
+ERROR: 7005: jsprit.core.util.VehicleRoutingTransportCostsMatrix: Parameter 2 of 'public double getTransportTime(java.lang.String, java.lang.String, double, jsprit.core.problem.driver.Driver, jsprit.core.problem.vehicle.Vehicle)' has changed its type to jsprit.core.problem.Location
