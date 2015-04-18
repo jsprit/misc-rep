@@ -7,7 +7,6 @@
     },
     "host": "graphhopper.com",
     "basePath": "/api/1/vrp",
-
     "schemes": [
         "https"
     ],
@@ -19,7 +18,7 @@
             "post": {
                 "summary": "Solves large routing problems",
                 "description": "This endpoint solves large problems, i.e. traveling salesman or vehicle routing problems, and returns the solution.\n",
-                "operationId" : "postVrp",
+                "operationId": "postVrp",
                 "consumes": [
                     "application/json"
                 ],
@@ -42,7 +41,7 @@
                 ],
                 "responses": {
                     "200": {
-                        "description": "A response containing the solution",
+                        "description": "A jobId you can use to retrieve your solution from server - see solution endpoint.",
                         "schema": {
                             "name": "JobId",
                             "$ref": "#/definitions/JobId"
@@ -164,9 +163,9 @@
             }
         },
         "ErrorSchema": {
-            "type":"object",
+            "type": "object",
             "properties": {
-                "message" : {
+                "message": {
                     "type": "string",
                     "description": "should give a meaningful error message"
                 },
@@ -180,17 +179,17 @@
             }
         },
         "Hint": {
-          "type": "object",
-          "properties": {
-              "message": {
-                  "type": "string",
-                  "description": "should give a meaningful error-hint message"
-              },
-              "details": {
-                  "type": "string",
-                  "description": "additional information about the error-hint"
-              }
-          }
+            "type": "object",
+            "properties": {
+                "message": {
+                    "type": "string",
+                    "description": "should give a meaningful error-hint message"
+                },
+                "details": {
+                    "type": "string",
+                    "description": "additional information about the error-hint"
+                }
+            }
         },
         "Address": {
             "type": "object",
@@ -248,22 +247,21 @@
                 "type": {
                     "type": "string",
                     "description": "type of service",
-                    "enum":[
+                    "enum": [
                         "service"
                     ]
-
                 },
                 "address": {
                     "$ref": "#/definitions/Address"
                 },
-                "duration" : {
-                    "type" : "integer",
-                    "format" : "int64",
-                    "description" : "duration of service, i.e. time in ms the corresponding activity takes"
+                "duration": {
+                    "type": "integer",
+                    "format": "int64",
+                    "description": "duration of service, i.e. time in ms the corresponding activity takes"
                 },
-                "time_windows" : {
-                    "type" : "array",
-                    "items" : {
+                "time_windows": {
+                    "type": "array",
+                    "items": {
                         "$ref": "#/definitions/TimeWindow"
                     },
                     "description": "array of time windows. currently, only a single time window is allowed"
@@ -272,58 +270,37 @@
         },
         "TimeWindow": {
             "properties": {
-                "earliest" : {
-                    "type" : "integer",
-                    "format" : "int64",
-                    "description" : "earliest start time of corresponding activity"
-                },
-                "latest" : {
-                    "type" : "integer",
-                    "format" : "int64",
-                    "description" : "latest start time of corresponding activity"
-                }
-            }
-        },
-        "Info": {
-            "properties": {
-                "comp_time": {
+                "earliest": {
                     "type": "integer",
                     "format": "int64",
-                    "description": "indicates how long computation took in ms"
-                }
-            }
-        },
-        "Response": {
-            "properties": {
-                "processing_time": {
+                    "description": "earliest start time of corresponding activity"
+                },
+                "latest": {
                     "type": "integer",
                     "format": "int64",
-                    "description": "processing time in ms"
-                },
-                "solution": {
-                    "$ref": "#/definitions/Solution"
+                    "description": "latest start time of corresponding activity"
                 }
             }
         },
         "LargeResponse": {
             "properties": {
-                "job_id" : {
-                    "type" : "string",
-                    "description" : "unique identify of job - which you get when posting your request to the large problem solver"
+                "job_id": {
+                    "type": "string",
+                    "description": "unique identify of job - which you get when posting your request to the large problem solver"
                 },
-                "status" : {
-                    "type" : "string",
+                "status": {
+                    "type": "string",
                     "enum": [
                         "waiting_in_queue",
                         "processing",
                         "finished"
                     ],
-                    "description" : "indicates the current status of the job"
+                    "description": "indicates the current status of the job"
                 },
-                "waiting_in_queue" : {
-                    "type" : "integer",
-                    "format" : "int64",
-                    "description" : "waiting time in ms"
+                "waiting_in_queue": {
+                    "type": "integer",
+                    "format": "int64",
+                    "description": "waiting time in ms"
                 },
                 "processing_time": {
                     "type": "integer",
