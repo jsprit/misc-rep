@@ -82,21 +82,18 @@
                     "200": {
                         "description": "A response containing the solution",
                         "schema": {
-                            "name": "Solution",
                             "$ref": "#/definitions/LargeResponse"
                         }
                     },
                     "400": {
                         "description": "Error occurred (very likely) on client side such as invalid input.",
                         "schema": {
-                            "name": "Error",
                             "$ref": "#/definitions/ErrorSchema"
                         }
                     },
                     "500": {
                         "description": "Error occurred (very likely) on server side.",
                         "schema": {
-                            "name": "Error",
                             "$ref": "#/definitions/ErrorSchema"
                         }
                     }
