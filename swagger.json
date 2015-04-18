@@ -47,10 +47,7 @@
                         }
                     },
                     "400": {
-                        "description": "Error occurred when reading client request. Request is invalid.",
-                        "schema": {
-                            "$ref": "#/definitions/ErrorSchema"
-                        }
+                        "description": "Error occurred when reading client request. Request is invalid."
                     }
                 }
             }
@@ -86,16 +83,10 @@
                         }
                     },
                     "400": {
-                        "description": "Error occurred (very likely) on client side such as invalid input.",
-                        "schema": {
-                            "$ref": "#/definitions/ErrorSchema"
-                        }
+                        "description": "Error occurred (very likely) on client side such as invalid input."
                     },
                     "500": {
-                        "description": "Error occurred (very likely) on server side.",
-                        "schema": {
-                            "$ref": "#/definitions/ErrorSchema"
-                        }
+                        "description": "Error occurred (very likely) on server side."
                     }
                 }
             }
