@@ -1,0 +1,425 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "Tour Optimization API",
+        "description": "Our Tour Optimization API solves the so called vehicle routing problem fast. It calculates an optimal tour for a set of vehicles, services and constraints",
+        "version": "1.0"
+    },
+    "host": "graphhopper.com",
+    "basePath": "/api/1/vrp",
+
+    "schemes": [
+        "https"
+    ],
+    "produces": [
+        "application/json"
+    ],
+    "paths": {
+        "/optimize": {
+            "post": {
+                "summary": "Solves large routing problems",
+                "description": "This endpoint solves large problems, i.e. traveling salesman or vehicle routing problems, and returns the solution.\n",
+                "operationId" : "postVrp",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "in": "body",
+                        "name": "body",
+                        "description": "Request object that contains the problem to be solved",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/Request"
+                        }
+                    }
+                ],
+                "tags": [
+                    "vrp"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "A response containing the solution",
+                        "schema": {
+                            "name": "JobId",
+                            "$ref": "#/definitions/JobId"
+                        }
+                    },
+                    "400": {
+                        "description": "Error occurred when reading client request. Request is invalid.",
+                        "schema": {
+                            "name": "Error",
+                            "$ref": "#/definitions/ErrorSchema"
+                        }
+                    }
+                }
+            }
+        },
+        "/solution/{jobId}": {
+            "get": {
+                "summary": "Return the solution associated to the jobId",
+                "description": "This endpoint returns the solution of a large problems. You can fetch it with the job_id, you have been sent.\n",
+                "operationId": "getSolution",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "in": "path",
+                        "name": "jobId",
+                        "description": "Request solution with jobId",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "tags": [
+                    "solution"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "A response containing the solution",
+                        "schema": {
+                            "name": "Solution",
+                            "$ref": "#/definitions/LargeResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "Error occurred (very likely) on client side such as invalid input.",
+                        "schema": {
+                            "name": "Error",
+                            "$ref": "#/definitions/ErrorSchema"
+                        }
+                    },
+                    "500": {
+                        "description": "Error occurred (very likely) on server side.",
+                        "schema": {
+                            "name": "Error",
+                            "$ref": "#/definitions/ErrorSchema"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "JobId": {
+            "properties": {
+                "job_id": {
+                    "type": "string",
+                    "description": "unique id for your job/request with which you can fetch your solution"
+                }
+            }
+        },
+        "Request": {
+            "properties": {
+                "vehicles": {
+                    "type": "array",
+                    "description": "An array of vehicles that can be employed",
+                    "items": {
+                        "$ref": "#/definitions/Vehicle"
+                    }
+                },
+                "vehicle_types": {
+                    "type": "array",
+                    "description": "An array of vehicle types",
+                    "items": {
+                        "$ref": "#/definitions/VehicleType"
+                    }
+                },
+                "services": {
+                    "type": "array",
+                    "description": "An array of services",
+                    "items": {
+                        "$ref": "#/definitions/Service"
+                    }
+                }
+            }
+        },
+        "Vehicle": {
+            "properties": {
+                "vehicle_id": {
+                    "type": "string",
+                    "description": "Unique identifier of vehicle"
+                },
+                "type_id": {
+                    "type": "string",
+                    "description": "Unique identifier referring to the available vehicle types"
+                },
+                "start_address": {
+                    "$ref": "#/definitions/Address"
+                },
+                "end_address": {
+                    "$ref": "#/definitions/Address"
+                },
+                "return_to_depot": {
+                    "type": "boolean",
+                    "description": "Indicates whether vehicle should return to start address or not. If not, it can end at any service activity."
+                }
+            }
+        },
+        "ErrorSchema": {
+            "type":"object",
+            "properties": {
+                "message" : {
+                    "type": "string",
+                    "description": "should give a meaningful error message"
+                },
+                "hints": {
+                    "type": "array",
+                    "description": "An array of error hints",
+                    "items": {
+                        "$ref": "#/definitions/Hint"
+                    }
+                }
+            }
+        },
+        "Hint": {
+          "type": "object",
+          "properties": {
+              "message": {
+                  "type": "string",
+                  "description": "should give a meaningful error-hint message"
+              },
+              "details": {
+                  "type": "string",
+                  "description": "additional information about the error-hint"
+              }
+          }
+        },
+        "Address": {
+            "type": "object",
+            "properties": {
+                "location_id": {
+                    "type": "string",
+                    "description": "Unique identifier of location"
+                },
+                "lon": {
+                    "format": "double",
+                    "type": "number",
+                    "description": "longitude"
+                },
+                "lat": {
+                    "format": "double",
+                    "type": "number",
+                    "description": "latitude"
+                }
+            }
+        },
+        "VehicleType": {
+            "properties": {
+                "type_id": {
+                    "type": "string",
+                    "description": "Unique identifier for the vehicle type"
+                },
+                "profile": {
+                    "type": "string",
+                    "description": "Profile of vehicle type",
+                    "example": "car",
+                    "enum": [
+                        "car",
+                        "bike",
+                        "foot"
+                    ]
+                },
+                "distance_dependent_costs": {
+                    "type": "number",
+                    "format": "double",
+                    "description": "cost factor of distance"
+                },
+                "time_dependent_costs": {
+                    "type": "number",
+                    "format": "double",
+                    "description": "cost factor of time"
+                }
+            }
+        },
+        "Service": {
+            "properties": {
+                "job_id": {
+                    "type": "string",
+                    "description": "Unique identifier of service"
+                },
+                "type": {
+                    "type": "string",
+                    "description": "type of service",
+                    "enum":[
+                        "service"
+                    ]
+
+                },
+                "address": {
+                    "$ref": "#/definitions/Address"
+                },
+                "duration" : {
+                    "type" : "integer",
+                    "format" : "int64",
+                    "description" : "duration of service, i.e. time in ms the corresponding activity takes"
+                },
+                "time_windows" : {
+                    "type" : "array",
+                    "items" : {
+                        "$ref": "#/definitions/TimeWindow"
+                    },
+                    "description": "array of time windows. currently, only a single time window is allowed"
+                }
+            }
+        },
+        "TimeWindow": {
+            "properties": {
+                "earliest" : {
+                    "type" : "integer",
+                    "format" : "int64",
+                    "description" : "earliest start time of corresponding activity"
+                },
+                "latest" : {
+                    "type" : "integer",
+                    "format" : "int64",
+                    "description" : "latest start time of corresponding activity"
+                }
+            }
+        },
+        "Info": {
+            "properties": {
+                "comp_time": {
+                    "type": "integer",
+                    "format": "int64",
+                    "description": "indicates how long computation took in ms"
+                }
+            }
+        },
+        "Response": {
+            "properties": {
+                "processing_time": {
+                    "type": "integer",
+                    "format": "int64",
+                    "description": "processing time in ms"
+                },
+                "solution": {
+                    "$ref": "#/definitions/Solution"
+                }
+            }
+        },
+        "LargeResponse": {
+            "properties": {
+                "job_id" : {
+                    "type" : "string",
+                    "description" : "unique identify of job - which you get when posting your request to the large problem solver"
+                },
+                "status" : {
+                    "type" : "string",
+                    "enum": [
+                        "waiting_in_queue",
+                        "processing",
+                        "finished"
+                    ],
+                    "description" : "indicates the current status of the job"
+                },
+                "waiting_in_queue" : {
+                    "type" : "integer",
+                    "format" : "int64",
+                    "description" : "waiting time in ms"
+                },
+                "processing_time": {
+                    "type": "integer",
+                    "format": "int64",
+                    "description": "processing time in ms. if job is still waiting in queue, processing_time is 0"
+                },
+                "solution": {
+                    "$ref": "#/definitions/Solution",
+                    "description": "if solution is not available yet, it is indicated with 'pending' "
+                }
+            }
+        },
+        "Solution": {
+            "properties": {
+                "costs": {
+                    "type": "integer",
+                    "format": "int32",
+                    "description": "overall costs of solution"
+                },
+                "distance": {
+                    "type": "integer",
+                    "format": "int32",
+                    "description": "overall travel distance in meters"
+                },
+                "time": {
+                    "type": "integer",
+                    "format": "int64",
+                    "description": "overall travel time in ms"
+                },
+                "no_unassigned_jobs": {
+                    "type": "integer",
+                    "format": "int32",
+                    "description": "number of jobs that could not be assigned to final solution"
+                },
+                "routes": {
+                    "type": "array",
+                    "description": "An array of routes",
+                    "items": {
+                        "$ref": "#/definitions/Route"
+                    }
+                },
+                "unassigned_jobs": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "description": "id of unassigned job"
+                    },
+                    "description": "array of unassigned job ids"
+                }
+            }
+        },
+        "Route": {
+            "properties": {
+                "vehicle_id": {
+                    "type": "string",
+                    "description": "id of vehicle that operates route"
+                },
+                "activities": {
+                    "type": "array",
+                    "description": "array of activities",
+                    "items": {
+                        "$ref": "#/definitions/Activity"
+                    }
+                }
+            }
+        },
+        "Activity": {
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "description": "type of activity",
+                    "enum": [
+                        "start",
+                        "end",
+                        "service"
+                    ]
+                },
+                "location_id": {
+                    "type": "string",
+                    "description": "id that refers to address"
+                },
+                "job_id": {
+                    "type": "string",
+                    "description": "id referring to the underlying job, i.e. the service this activity belongs to"
+                },
+                "arr_time": {
+                    "type": "integer",
+                    "format": "int64",
+                    "description": "arrival time at this activity in ms"
+                },
+                "end_time": {
+                    "type": "integer",
+                    "format": "int64",
+                    "description": "end time of and thus departure time at this activity"
+                }
+            }
+        }
+    }
+}
