@@ -43,14 +43,12 @@
                     "200": {
                         "description": "A jobId you can use to retrieve your solution from server - see solution endpoint.",
                         "schema": {
-                            "name": "JobId",
                             "$ref": "#/definitions/JobId"
                         }
                     },
                     "400": {
                         "description": "Error occurred when reading client request. Request is invalid.",
                         "schema": {
-                            "name": "Error",
                             "$ref": "#/definitions/ErrorSchema"
                         }
                     }
