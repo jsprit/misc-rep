@@ -56,12 +56,7 @@
                     "400": {
                         "description": "Error occurred when reading client request. Request is invalid."
                     }
-                },
-                "security": [
-                    {
-                        "api_key": []
-                    }
-                ]
+                }
             }
         },
         "/solution/{jobId}": {
@@ -107,12 +102,7 @@
                     "500": {
                         "description": "Error occurred (very likely) on server side."
                     }
-                },
-                "security": [
-                    {
-                        "api_key": []
-                    }
-                    ]
+                }
             }
         }
     },
@@ -169,35 +159,6 @@
                 "return_to_depot": {
                     "type": "boolean",
                     "description": "Indicates whether vehicle should return to start address or not. If not, it can end at any service activity."
-                }
-            }
-        },
-        "ErrorSchema": {
-            "type": "object",
-            "properties": {
-                "message": {
-                    "type": "string",
-                    "description": "should give a meaningful error message"
-                },
-                "hints": {
-                    "type": "array",
-                    "description": "An array of error hints",
-                    "items": {
-                        "$ref": "#/definitions/Hint"
-                    }
-                }
-            }
-        },
-        "Hint": {
-            "type": "object",
-            "properties": {
-                "message": {
-                    "type": "string",
-                    "description": "should give a meaningful error-hint message"
-                },
-                "details": {
-                    "type": "string",
-                    "description": "additional information about the error-hint"
                 }
             }
         },
@@ -354,21 +315,21 @@
                 },
                 "unassigned": {
                     "type": "object",
-                    "properties" : {
-                        "services" : {
-                            "type" : "array",
-                            "description" : "An array of ids of unassigned services",
-                            "items" : {
-                                "type" : "string",
-                                "description" : "id of unassigned service"
-                             }
+                    "properties": {
+                        "services": {
+                            "type": "array",
+                            "description": "An array of ids of unassigned services",
+                            "items": {
+                                "type": "string",
+                                "description": "id of unassigned service"
+                            }
                         },
-                        "shipments" : {
-                            "type" : "array",
-                            "description" : "An array of ids of unassigned shipments",
-                            "items" : {
-                                "type" : "string",
-                                "description" : "id of unassigned shipments"
+                        "shipments": {
+                            "type": "array",
+                            "description": "An array of ids of unassigned shipments",
+                            "items": {
+                                "type": "string",
+                                "description": "id of unassigned shipments"
                             }
                         }
                     }
