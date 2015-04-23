@@ -27,6 +27,13 @@
                 ],
                 "parameters": [
                     {
+                        "in": "query",
+                        "name": "key",
+                        "description": "your api_key",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
                         "in": "body",
                         "name": "body",
                         "description": "Request object that contains the problem to be solved",
@@ -49,7 +56,12 @@
                     "400": {
                         "description": "Error occurred when reading client request. Request is invalid."
                     }
-                }
+                },
+                "security": [
+                    {
+                        "api_key": []
+                    }
+                ]
             }
         },
         "/solution/{jobId}": {
@@ -64,6 +76,13 @@
                     "application/json"
                 ],
                 "parameters": [
+                    {
+                        "in": "query",
+                        "name": "key",
+                        "description": "your api_key",
+                        "required": true,
+                        "type": "string"
+                    },
                     {
                         "in": "path",
                         "name": "jobId",
@@ -88,7 +107,12 @@
                     "500": {
                         "description": "Error occurred (very likely) on server side."
                     }
-                }
+                },
+                "security": [
+                    {
+                        "api_key": []
+                    }
+                    ]
             }
         }
     },
@@ -226,7 +250,7 @@
         },
         "Service": {
             "properties": {
-                "job_id": {
+                "id": {
                     "type": "string",
                     "description": "Unique identifier of service"
                 },
@@ -316,7 +340,7 @@
                     "format": "int64",
                     "description": "overall travel time in ms"
                 },
-                "no_unassigned_jobs": {
+                "no_unassigned": {
                     "type": "integer",
                     "format": "int32",
                     "description": "number of jobs that could not be assigned to final solution"
@@ -328,8 +352,26 @@
                         "$ref": "#/definitions/Route"
                     }
                 },
-                "unassigned_jobs": {
-                    "type": "array",
+                "unassigned": {
+                    "type": "object",
+                    "properties" : {
+                        "services" : {
+                            "type" : "array",
+                            "description" : "An array of ids of unassigned services",
+                            "item" : {
+                                "type" : "string",
+                                "description" : "id of unassigned service"
+                             }
+                        },
+                        "shipments" : {
+                            "type" : "array",
+                            "description" : "An array of ids of unassigned shipments",
+                            "item" : {
+                                "type" : "string",
+                                "description" : "id of unassigned shipments"
+                            }
+                        }
+                    },
                     "items": {
                         "type": "string",
                         "description": "id of unassigned job"
@@ -364,13 +406,13 @@
                         "service"
                     ]
                 },
+                "id": {
+                    "type": "string",
+                    "description": "id referring to the underlying service or shipment, i.e. the shipment or service this activity belongs to"
+                },
                 "location_id": {
                     "type": "string",
                     "description": "id that refers to address"
-                },
-                "job_id": {
-                    "type": "string",
-                    "description": "id referring to the underlying job, i.e. the service this activity belongs to"
                 },
                 "arr_time": {
                     "type": "integer",
