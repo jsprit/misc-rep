@@ -358,7 +358,7 @@
                         "services" : {
                             "type" : "array",
                             "description" : "An array of ids of unassigned services",
-                            "item" : {
+                            "items" : {
                                 "type" : "string",
                                 "description" : "id of unassigned service"
                              }
@@ -366,17 +366,12 @@
                         "shipments" : {
                             "type" : "array",
                             "description" : "An array of ids of unassigned shipments",
-                            "item" : {
+                            "items" : {
                                 "type" : "string",
                                 "description" : "id of unassigned shipments"
                             }
                         }
-                    },
-                    "items": {
-                        "type": "string",
-                        "description": "id of unassigned job"
-                    },
-                    "description": "array of unassigned job ids"
+                    }
                 }
             }
         },
