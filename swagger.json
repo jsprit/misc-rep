@@ -13,6 +13,16 @@
     "produces": [
         "application/json"
     ],
+    "security": [{
+            "api_key": []
+        }],
+    "securityDefinitions": {
+        "api_key": {
+            "type": "apiKey",
+            "name": "key",
+            "in": "query"
+        }
+    },
     "paths": {
         "/optimize": {
             "post": {
@@ -25,15 +35,13 @@
                 "produces": [
                     "application/json"
                 ],
-                "parameters": [
-                    {
+                "parameters": [{
                         "in": "query",
                         "name": "key",
-                        "description": "your api_key",
+                        "description": "your API key",
                         "required": true,
                         "type": "string"
-                    },
-                    {
+                    }, {
                         "in": "body",
                         "name": "body",
                         "description": "Request object that contains the problem to be solved",
@@ -55,6 +63,9 @@
                     },
                     "400": {
                         "description": "Error occurred when reading client request. Request is invalid."
+                    },
+                    "500": {
+                        "description": "Error occurred on server side."
                     }
                 }
             }
@@ -70,15 +81,13 @@
                 "produces": [
                     "application/json"
                 ],
-                "parameters": [
-                    {
+                "parameters": [{
                         "in": "query",
                         "name": "key",
-                        "description": "your api_key",
+                        "description": "your API key",
                         "required": true,
                         "type": "string"
-                    },
-                    {
+                    }, {
                         "in": "path",
                         "name": "jobId",
                         "description": "Request solution with jobId",
@@ -97,10 +106,10 @@
                         }
                     },
                     "400": {
-                        "description": "Error occurred (very likely) on client side such as invalid input."
+                        "description": "Error occurred on client side such as invalid input."
                     },
                     "500": {
-                        "description": "Error occurred (very likely) on server side."
+                        "description": "Error occurred on server side."
                     }
                 }
             }
@@ -137,6 +146,13 @@
                     "items": {
                         "$ref": "#/definitions/Service"
                     }
+                },
+                "shipments": {
+                    "type": "array",
+                    "description": "An array of shipments",
+                    "items": {
+                        "$ref": "#/definitions/Shipment"
+                    }
                 }
             }
         },
@@ -159,6 +175,23 @@
                 "return_to_depot": {
                     "type": "boolean",
                     "description": "Indicates whether vehicle should return to start address or not. If not, it can end at any service activity."
+                },
+                "earliest_start": {
+                    "type": "integer",
+                    "format": "int64",
+                    "description": "earliest start of vehicle at its start location"
+                },
+                "latest_end": {
+                    "type": "integer",
+                    "format": "int64",
+                    "description": "latest end of vehicle at its end location"
+                },
+                "skills": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "array of skills"
                 }
             }
         },
@@ -206,6 +239,14 @@
                     "type": "number",
                     "format": "double",
                     "description": "cost factor of time"
+                },
+                "capacity": {
+                    "type" : "array",
+                    "description" : "array of capacity dimensions",
+                    "items": {
+                        "type": "integer",
+                        "format": "int32"
+                    }
                 }
             }
         },
@@ -222,6 +263,10 @@
                         "service"
                     ]
                 },
+                "name": {
+                    "type": "string",
+                    "description": "name of service"
+                },
                 "address": {
                     "$ref": "#/definitions/Address"
                 },
@@ -229,6 +274,75 @@
                     "type": "integer",
                     "format": "int64",
                     "description": "duration of service, i.e. time in ms the corresponding activity takes"
+                },
+                "time_windows": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/TimeWindow"
+                    },
+                    "description": "array of time windows. currently, only a single time window is allowed"
+                },
+                "size": {
+                    "type" : "array",
+                    "description" : "array of capacity dimensions",
+                    "items": {
+                        "type": "integer",
+                        "format": "int32"
+                    }
+                },
+                "required_skills": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "array of required skills"
+                }
+
+            }
+        },
+        "Shipment": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "description": "Unique identifier of service"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "name of shipment"
+                },
+                "pickup" : {
+                    "$ref": "#/definitions/Stop"
+                },
+                "delivery" : {
+                    "$ref": "#/definitions/Stop"
+                },
+                "size": {
+                    "type" : "array",
+                    "description" : "array of capacity dimensions",
+                    "items": {
+                        "type": "integer",
+                        "format": "int32"
+                    }
+                },
+                "required_skills": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "array of required skills"
+                }
+            }
+        },
+        "Stop": {
+            "properties": {
+                "address": {
+                    "$ref": "#/definitions/Address"
+                },
+                "duration": {
+                    "type": "integer",
+                    "format": "int64",
+                    "description": "duration of stop, i.e. time in ms the corresponding activity takes"
                 },
                 "time_windows": {
                     "type": "array",
@@ -280,7 +394,7 @@
                 },
                 "solution": {
                     "$ref": "#/definitions/Solution",
-                    "description": "if solution is not available yet, it is indicated with 'pending' "
+                    "description": "the solution. only available if status field indicates finished"
                 }
             }
         },
